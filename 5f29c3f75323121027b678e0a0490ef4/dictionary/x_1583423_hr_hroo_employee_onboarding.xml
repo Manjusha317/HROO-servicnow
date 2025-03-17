@@ -14,6 +14,7 @@
         <element label="Location" max_length="32" name="location" reference="cmn_location" type="reference"/>
         <element label="Requested For" max_length="32" name="requested_for" reference="sys_user" type="reference"/>
         <element label="IT Equipment Required?" max_length="40" name="it_equipment_required" type="boolean"/>
+        <element label="tttesttt" max_length="40" name="tttesttt" type="boolean"/>
         <element label="Hardware Item" max_length="32" name="hardware_item" reference="cmdb_ci_hardware" type="reference"/>
         <element choice="1" label="Status " max_length="40" name="status" type="choice">
             <choice>
