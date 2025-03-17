@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>false</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>sc_req_item</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Trigger Onboarding Approval</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+    if (current.cat_item == '54d0dc4e5363121027b678e0a0490eef') {  
+        
+        // Create an approval record for the manager
+        var approval = new GlideRecord('sysapproval_approver');
+        approval.initialize();
+        approval.approver = current.variables.manager; // Manager selected in the catalog item
+        approval.sysapproval = current.sys_id; // Reference to the Request Item
+        approval.state = 'requested'; // Set to "Requested"
+        approval.insert();
+
+        // Update the state to "Pending Approval"
+        current.state = '2'; // 2 = Pending Approval
+        current.update();
+    }
+})(current, previous);
+]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>Manjusha.Jadhav</sys_created_by>
+        <sys_created_on>2025-02-18 12:04:12</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>be2402ad533b121027b678e0a0490eb5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Trigger Onboarding Approval</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="HR Onboarding &amp;amp; Offboarding" source="x_1583423_hr_hroo">5f29c3f75323121027b678e0a0490ef4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HR Onboarding &amp;amp; Offboarding">5f29c3f75323121027b678e0a0490ef4</sys_scope>
+        <sys_update_name>sys_script_be2402ad533b121027b678e0a0490eb5</sys_update_name>
+        <sys_updated_by>Manjusha.Jadhav</sys_updated_by>
+        <sys_updated_on>2025-02-18 12:04:12</sys_updated_on>
+        <template/>
+        <when>after</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=be2402ad533b121027b678e0a0490eb5"/>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>be2402ad533b121027b678e0a0490eb5</id>
+        <sys_created_by>Manjusha.Jadhav</sys_created_by>
+        <sys_created_on>2025-02-18 12:04:12</sys_created_on>
+        <sys_id>3584c6ad533b121027b678e0a0490e5e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Manjusha.Jadhav</sys_updated_by>
+        <sys_updated_on>2025-02-18 12:04:12</sys_updated_on>
+        <table>sys_script</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

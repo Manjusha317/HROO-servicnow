@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[/*(function() {
+  api.controller = function() {
+    var c = this;
+    
+    c.navItems = [
+      { label: "Home", url: "#!/onboarding_offboarding_home" },
+      { label: "Onboarding Requests", url: "#!/onboarding_requests" },
+      { label: "Offboarding Requests", url: "#!/offboarding_requests" },
+      { label: "My Requests", url: "#!/my_requests" },
+      { label: "Approvals", url: "#!/approvals" },
+      { label: "Dashboard", url: "#!/dashboard" }
+    ];
+  };
+})();*/
+api.controller = function($scope, spUtil) {
+    $scope.navigateTo = function(page) {
+        spUtil.navigateTo(page);
+    };
+};
+
+]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.nav-menu {
+  background-color: #004080;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-menu ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+}
+
+.nav-menu ul li {
+  display: inline;
+}
+
+.nav-menu ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.nav-menu ul li a:hover {
+  background-color: #ffcc00;
+  color: #004080;
+}
+.nav-menu {
+  width: 100%;
+}
+.nav-menu {
+  min-height: 50px;
+}
+
+
+</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>hr_navigation_menu</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>HR Navigation Menu</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {  /* populate the 'data' object */  /* e.g., data.table = $sp.getValue('table'); */})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>Manjusha.Jadhav</sys_created_by>
+        <sys_created_on>2025-03-04 11:56:28</sys_created_on>
+        <sys_id>f8094a4a5340a21027b678e0a0490ee0</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>HR Navigation Menu</sys_name>
+        <sys_package display_value="HR Onboarding &amp;amp; Offboarding" source="x_1583423_hr_hroo">5f29c3f75323121027b678e0a0490ef4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HR Onboarding &amp;amp; Offboarding">5f29c3f75323121027b678e0a0490ef4</sys_scope>
+        <sys_update_name>sp_widget_f8094a4a5340a21027b678e0a0490ee0</sys_update_name>
+        <sys_updated_by>Manjusha.Jadhav</sys_updated_by>
+        <sys_updated_on>2025-03-06 06:24:33</sys_updated_on>
+        <template><![CDATA[/*<div class="nav-menu">
+  <ul>
+    <li><a href="#!/onboarding_requests">Onboarding</a></li>
+    <li><a href="#!/offboarding_requests">Offboarding</a></li>
+    <li><a href="#!/my_requests">My Requests</a></li>
+    <li><a href="#!/approvals">Approvals</a></li>
+  </ul>
+</div>*/
+<button ng-click="navigateTo('/onboarding_offboarding_homepage')">Home</button>
+<button ng-click="navigateTo('/hr_dashboard_hub')">HR Dashboard</button>
+<button ng-click="navigateTo('/manager_approval')">Manager Approvals</button>
+]]></template>
+    </sp_widget>
+</record_update>

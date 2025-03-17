@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function($scope, $http) {
+    $scope.kbResults = [];
+
+    $scope.searchKB = function() {
+        if ($scope.query.length < 3) {
+            $scope.kbResults = [];
+            return;
+        }
+
+        var kbUrl = "/api/now/table/kb_knowledge?sysparm_query=short_descriptionLIKE" + encodeURIComponent($scope.query);
+        
+        $http.get(kbUrl).then(function(response) {
+            $scope.kbResults = response.data.result.map(function(article) {
+                return {
+                    title: article.short_description,
+                    url: "/kb_view.do?sys_id=" + article.sys_id
+                };
+            });
+        });
+    };
+}
+]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id/>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>Onboarding &amp; Offboarding KB Search</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>Manjusha.Jadhav</sys_created_by>
+        <sys_created_on>2025-02-24 10:27:55</sys_created_on>
+        <sys_id>92d76ceb53b7121027b678e0a0490e2c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Onboarding &amp; Offboarding KB Search</sys_name>
+        <sys_package display_value="HR Onboarding &amp;amp; Offboarding" source="x_1583423_hr_hroo">5f29c3f75323121027b678e0a0490ef4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HR Onboarding &amp;amp; Offboarding">5f29c3f75323121027b678e0a0490ef4</sys_scope>
+        <sys_update_name>sp_widget_92d76ceb53b7121027b678e0a0490e2c</sys_update_name>
+        <sys_updated_by>Manjusha.Jadhav</sys_updated_by>
+        <sys_updated_on>2025-02-24 10:27:55</sys_updated_on>
+        <template><![CDATA[<div>
+    <input type="text" ng-model="query" placeholder="Search for help..." class="form-control" ng-change="searchKB()" />
+    <ul>
+        <li ng-repeat="article in kbResults">
+            <a href="{{article.url}}" target="_blank">{{article.title}}</a>
+        </li>
+    </ul>
+</div>
+]]></template>
+    </sp_widget>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>92d76ceb53b7121027b678e0a0490e2c</id>
+        <sys_created_by>Manjusha.Jadhav</sys_created_by>
+        <sys_created_on>2025-02-24 10:27:54</sys_created_on>
+        <sys_id>6908e0eb53b7121027b678e0a0490ede</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Manjusha.Jadhav</sys_updated_by>
+        <sys_updated_on>2025-02-24 10:27:54</sys_updated_on>
+        <table>sp_widget</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

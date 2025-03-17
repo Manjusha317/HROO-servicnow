@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="INSERT_OR_UPDATE">
+        <catalog_item display_value="Employee Onboarding Request HROO">932bb4395308221027b678e0a0490ef3</catalog_item>
+        <catalog_variable>IO:ab646c8c5354221027b678e0a0490e4e</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>true</disabled>
+        <field/>
+        <field_message/>
+        <field_message_type>none</field_message_type>
+        <mandatory>ignore</mandatory>
+        <order>1000</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>Manjusha.Jadhav</sys_created_by>
+        <sys_created_on>2025-03-10 10:17:58</sys_created_on>
+        <sys_id>82fb60c85394221027b678e0a0490ed7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>additional_notes</sys_name>
+        <sys_package display_value="HR Onboarding &amp;amp; Offboarding" source="x_1583423_hr_hroo">5f29c3f75323121027b678e0a0490ef4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HR Onboarding &amp;amp; Offboarding">5f29c3f75323121027b678e0a0490ef4</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_82fb60c85394221027b678e0a0490ed7</sys_update_name>
+        <sys_updated_by>Manjusha.Jadhav</sys_updated_by>
+        <sys_updated_on>2025-03-10 10:17:58</sys_updated_on>
+        <table/>
+        <ui_policy display_value="making fields read only after submission">6835b93553bb521027b678e0a0490e8c</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
+        <variable>additional_notes</variable>
+        <variable_set/>
+        <visible>ignore</visible>
+    </catalog_ui_policy_action>
+    <sys_translated_text action="delete_multiple" query="documentkey=82fb60c85394221027b678e0a0490ed7"/>
+</record_update>

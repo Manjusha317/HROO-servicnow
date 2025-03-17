@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_page_property">
+    <sys_ux_page_property action="DELETE">
+        <choices/>
+        <description/>
+        <name>chrome_toolbar</name>
+        <page display_value="Workspace HR Onboarding &amp; Offboarding ">c3b413265380221027b678e0a0490e8b</page>
+        <required_translations>[ {
+  "message" : "hr dashboard",
+  "comment" : ""
+}, {
+  "message" : "hr home",
+  "comment" : ""
+} ]</required_translations>
+        <route/>
+        <suffix/>
+        <sys_class_name>sys_ux_page_property</sys_class_name>
+        <sys_created_by>Manjusha.Jadhav</sys_created_by>
+        <sys_created_on>2025-03-06 11:25:22</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>global</sys_domain_path>
+        <sys_id>34151c7a53c4221027b678e0a0490eb7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>chrome_toolbar</sys_name>
+        <sys_package display_value="HR Onboarding &amp;amp; Offboarding" source="x_1583423_hr_hroo">5f29c3f75323121027b678e0a0490ef4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HR Onboarding &amp;amp; Offboarding">5f29c3f75323121027b678e0a0490ef4</sys_scope>
+        <sys_update_name>sys_ux_page_property_34151c7a53c4221027b678e0a0490eb7</sys_update_name>
+        <sys_updated_by>Manjusha.Jadhav</sys_updated_by>
+        <sys_updated_on>2025-03-06 11:25:22</sys_updated_on>
+        <type>json</type>
+        <unique_name>x_1583423_hr_hroo.c3b413265380221027b678e0a0490e8b.root.global.chrome_toolbar</unique_name>
+        <value>[
+    {
+        "id": "dashboard-hr-sgent-template",
+        "label": {
+            "translatable": true,
+            "message": "hr dashboard"
+        },
+        "icon": "",
+        "routeInfo": {
+            "route": "dashboard-hr-sgent-template"
+        },
+        "group": "top",
+        "order": 100,
+        "badge": {},
+        "presence": {},
+        "availability": {},
+        "viewportInfo": {}
+    },
+    {
+        "id": "hr-home",
+        "label": {
+            "translatable": true,
+            "message": "hr home"
+        },
+        "icon": "",
+        "routeInfo": {
+            "route": "hr-home"
+        },
+        "group": "bottom",
+        "order": 100,
+        "badge": {},
+        "presence": {},
+        "availability": {},
+        "viewportInfo": {}
+    }
+]</value>
+    </sys_ux_page_property>
+    <sys_translated_text action="DELETE" query="documentkey=34151c7a53c4221027b678e0a0490eb7"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="HR Onboarding &amp;amp; Offboarding">5f29c3f75323121027b678e0a0490ef4</application>
+        <file_path/>
+        <instance_id>5b9be94adb66359c02d91729139619cc</instance_id>
+        <instance_name>dev215488</instance_name>
+        <name>sys_ux_page_property_34151c7a53c4221027b678e0a0490eb7</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_page_property"><sys_ux_page_property action="INSERT_OR_UPDATE"><choices/><description/><name>chrome_toolbar</name><page display_value="Workspace HR Onboarding &amp; Offboarding ">c3b413265380221027b678e0a0490e8b</page><required_translations>[ {
+  "message" : "hr dashboard",
+  "comment" : ""
+}, {
+  "message" : "hr home",
+  "comment" : ""
+} ]</required_translations><route/><suffix/><sys_class_name>sys_ux_page_property</sys_class_name><sys_created_by>Manjusha.Jadhav</sys_created_by><sys_created_on>2025-03-06 11:25:22</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>global</sys_domain_path><sys_id>34151c7a53c4221027b678e0a0490eb7</sys_id><sys_mod_count>0</sys_mod_count><sys_name>chrome_toolbar</sys_name><sys_package display_value="HR Onboarding &amp;amp; Offboarding" source="x_1583423_hr_hroo">5f29c3f75323121027b678e0a0490ef4</sys_package><sys_policy/><sys_scope display_value="HR Onboarding &amp;amp; Offboarding">5f29c3f75323121027b678e0a0490ef4</sys_scope><sys_update_name>sys_ux_page_property_34151c7a53c4221027b678e0a0490eb7</sys_update_name><sys_updated_by>Manjusha.Jadhav</sys_updated_by><sys_updated_on>2025-03-06 11:25:22</sys_updated_on><type>json</type><unique_name>x_1583423_hr_hroo.c3b413265380221027b678e0a0490e8b.root.global.chrome_toolbar</unique_name><value>[
+    {
+        "id": "dashboard-hr-sgent-template",
+        "label": {
+            "translatable": true,
+            "message": "hr dashboard"
+        },
+        "icon": "",
+        "routeInfo": {
+            "route": "dashboard-hr-sgent-template"
+        },
+        "group": "top",
+        "order": 100,
+        "badge": {},
+        "presence": {},
+        "availability": {},
+        "viewportInfo": {}
+    },
+    {
+        "id": "hr-home",
+        "label": {
+            "translatable": true,
+            "message": "hr home"
+        },
+        "icon": "",
+        "routeInfo": {
+            "route": "hr-home"
+        },
+        "group": "bottom",
+        "order": 100,
+        "badge": {},
+        "presence": {},
+        "availability": {},
+        "viewportInfo": {}
+    }
+]</value></sys_ux_page_property><sys_translated_text action="delete_multiple" query="documentkey=34151c7a53c4221027b678e0a0490eb7"/></record_update>]]></payload>
+        <payload_hash>1185283140</payload_hash>
+        <record_name>chrome_toolbar</record_name>
+        <reverted_from/>
+        <source>db29c33f5323121027b678e0a0490ed8</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Manjusha.Jadhav</sys_created_by>
+        <sys_created_on>2025-03-06 11:25:22</sys_created_on>
+        <sys_id>78151c7a53c4221027b678e0a0490eb9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1956b33f6110000001</sys_recorded_at>
+        <sys_updated_by>Manjusha.Jadhav</sys_updated_by>
+        <sys_updated_on>2025-03-06 11:25:22</sys_updated_on>
+        <type>UX Page Property</type>
+        <update_guid>7c151c7addc4221079d284d29921d3b8</update_guid>
+        <update_guid_history>7c151c7addc4221079d284d29921d3b8:1185283140</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Manjusha.Jadhav</sys_created_by>
+        <sys_created_on>2025-03-07 05:53:04</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_page_property">sys_ux_page_property</sys_db_object>
+        <sys_id>2eb1506c05224e5098cf47d2bd03a3d9</sys_id>
+        <sys_metadata>34151c7a53c4221027b678e0a0490eb7</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>chrome_toolbar</sys_name>
+        <sys_package display_value="HR Onboarding &amp;amp; Offboarding" source="x_1583423_hr_hroo">5f29c3f75323121027b678e0a0490ef4</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="HR Onboarding &amp;amp; Offboarding">5f29c3f75323121027b678e0a0490ef4</sys_scope>
+        <sys_scope_delete display_value="">426438089e2a41478a3875bc719e2ce1</sys_scope_delete>
+        <sys_update_name>sys_ux_page_property_34151c7a53c4221027b678e0a0490eb7</sys_update_name>
+        <sys_update_version display_value="sys_ux_page_property_34151c7a53c4221027b678e0a0490eb7">78151c7a53c4221027b678e0a0490eb9</sys_update_version>
+        <sys_updated_by>Manjusha.Jadhav</sys_updated_by>
+        <sys_updated_on>2025-03-07 05:53:04</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

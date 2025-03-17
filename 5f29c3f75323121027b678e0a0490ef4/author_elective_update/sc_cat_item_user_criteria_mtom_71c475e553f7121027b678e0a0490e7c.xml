@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_user_criteria_mtom">
+    <sc_cat_item_user_criteria_mtom action="DELETE">
+        <sc_cat_item display_value="Employee Onboarding Request">5f71dfb75363121027b678e0a0490e16</sc_cat_item>
+        <sys_class_name>sc_cat_item_user_criteria_mtom</sys_class_name>
+        <sys_created_by>Manjusha.Jadhav</sys_created_by>
+        <sys_created_on>2025-02-18 10:55:24</sys_created_on>
+        <sys_id>71c475e553f7121027b678e0a0490e7c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Employee Onboarding Request.Users with 'Admin' Role</sys_name>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="HR Onboarding &amp;amp; Offboarding">5f29c3f75323121027b678e0a0490ef4</sys_scope>
+        <sys_update_name>sc_cat_item_user_criteria_mtom_71c475e553f7121027b678e0a0490e7c</sys_update_name>
+        <sys_updated_by>Manjusha.Jadhav</sys_updated_by>
+        <sys_updated_on>2025-02-18 10:55:24</sys_updated_on>
+        <user_criteria display_value="Users with 'Admin' Role">cb8e06e9d7103100f2d224837e610339</user_criteria>
+    </sc_cat_item_user_criteria_mtom>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="HR Onboarding &amp;amp; Offboarding">5f29c3f75323121027b678e0a0490ef4</application>
+        <file_path/>
+        <instance_id>5b9be94adb66359c02d91729139619cc</instance_id>
+        <instance_name>dev215488</instance_name>
+        <name>sc_cat_item_user_criteria_mtom_71c475e553f7121027b678e0a0490e7c</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_user_criteria_mtom"><sc_cat_item_user_criteria_mtom action="INSERT_OR_UPDATE"><sc_cat_item display_value="Employee Onboarding Request">5f71dfb75363121027b678e0a0490e16</sc_cat_item><sys_class_name>sc_cat_item_user_criteria_mtom</sys_class_name><sys_created_by>Manjusha.Jadhav</sys_created_by><sys_created_on>2025-02-18 10:55:24</sys_created_on><sys_id>71c475e553f7121027b678e0a0490e7c</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Employee Onboarding Request.Users with 'Admin' Role</sys_name><sys_package/><sys_policy/><sys_scope display_value="HR Onboarding &amp;amp; Offboarding">5f29c3f75323121027b678e0a0490ef4</sys_scope><sys_update_name>sc_cat_item_user_criteria_mtom_71c475e553f7121027b678e0a0490e7c</sys_update_name><sys_updated_by>Manjusha.Jadhav</sys_updated_by><sys_updated_on>2025-02-18 10:55:24</sys_updated_on><user_criteria display_value="Users with 'Admin' Role">cb8e06e9d7103100f2d224837e610339</user_criteria></sc_cat_item_user_criteria_mtom></record_update>]]></payload>
+        <payload_hash>912469211</payload_hash>
+        <record_name>Employee Onboarding Request.Users with 'Admin' Role</record_name>
+        <reverted_from/>
+        <source>a4d4b5e553f7121027b678e0a0490e90</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Manjusha.Jadhav</sys_created_by>
+        <sys_created_on>2025-02-18 10:55:36</sys_created_on>
+        <sys_id>b4d439e553f7121027b678e0a0490e33</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19518b2f6740000001</sys_recorded_at>
+        <sys_updated_by>Manjusha.Jadhav</sys_updated_by>
+        <sys_updated_on>2025-02-18 10:55:36</sys_updated_on>
+        <type>Catalog Item Available for</type>
+        <update_guid>b8d439e574f7121001e084bd1f4dfc32</update_guid>
+        <update_guid_history>b8d439e574f7121001e084bd1f4dfc32:912469211,b4d439e5d5f712100d23d3bf7f0a9e2f:1884032990</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Employee Onboarding Request.Users with 'Admin' Role">b1baf921533b121027b678e0a0490eec</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Manjusha.Jadhav</sys_created_by>
+        <sys_created_on>2025-02-18 11:21:20</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_user_criteria_mtom">sc_cat_item_user_criteria_mtom</sys_db_object>
+        <sys_id>3a54ad91aa134dd09bfdb8a651f3c910</sys_id>
+        <sys_metadata>71c475e553f7121027b678e0a0490e7c</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Employee Onboarding Request.Users with 'Admin' Role</sys_name>
+        <sys_package/>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="HR Onboarding &amp;amp; Offboarding">5f29c3f75323121027b678e0a0490ef4</sys_scope>
+        <sys_scope_delete display_value="">426438089e2a41478a3875bc719e2ce1</sys_scope_delete>
+        <sys_update_name>sc_cat_item_user_criteria_mtom_71c475e553f7121027b678e0a0490e7c</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_user_criteria_mtom_71c475e553f7121027b678e0a0490e7c">b4d439e553f7121027b678e0a0490e33</sys_update_version>
+        <sys_updated_by>Manjusha.Jadhav</sys_updated_by>
+        <sys_updated_on>2025-02-18 11:21:20</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

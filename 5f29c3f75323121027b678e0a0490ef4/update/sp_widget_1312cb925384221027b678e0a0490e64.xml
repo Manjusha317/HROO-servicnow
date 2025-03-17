@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller = function() {
+    // Check if approval data exists
+    if (data.approvalList && data.approvalList.length > 0) {
+        $scope.approvalList = data.approvalList;
+    } else {
+        $scope.noApprovalsMessage = "No pending approvals at the moment.";
+    }
+
+    // Function to approve or reject an approval record
+    $scope.handleApproval = function(approvalId, action) {
+        // GlideRecord to get the approval record by ID
+        var gr = new GlideRecord('sysapproval_approver');
+        if (gr.get(approvalId)) {
+            gr.state = action === 'approve' ? 'approved' : 'rejected';
+            gr.update();
+            
+            // Remove the processed approval from the list
+            $scope.approvalList = $scope.approvalList.filter(function(item) {
+                return item.approval_id !== approvalId;
+            });
+            $scope.$apply();
+        }
+    };
+}();
+]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.approval-list-widget {
+    font-family: Arial, sans-serif;
+}
+
+.approval-item {
+    border: 1px solid #ddd;
+    margin: 10px 0;
+    padding: 15px;
+    background-color: #f9f9f9;
+}
+
+.approval-actions button {
+    margin-right: 10px;
+}
+</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>hr_manager_approval_list</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>HR Manager Approval List</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+    // Initialize the approval list
+    var approvalList = [];
+    
+    // GlideRecord query to retrieve approval records for the current HR Manager
+    var approvalGr = new GlideRecord('sysapproval_approver');
+    
+    // Filter approvals that are 'Requested' and assigned to the logged-in HR Manager
+    approvalGr.addQuery('state', 'requested'); 
+    approvalGr.addQuery('approver', gs.getUserID()); // Only approvals for the current HR Manager
+    approvalGr.query();
+
+    // Collect data into approvalList
+    while (approvalGr.next()) {
+        approvalList.push({
+            approval_id: approvalGr.sys_id.toString(),
+            request_number: approvalGr.request.number,
+            request_type: approvalGr.request.sys_class_name,
+            approval_state: approvalGr.state.getDisplayValue(),
+            requested_for: approvalGr.requested_for.getDisplayValue(),
+            date_requested: approvalGr.sys_created_on.getDisplayValue()
+        });
+    }
+
+    // Pass the list to the client-side script
+    data.approvalList = approvalList;
+})();
+]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>Manjusha.Jadhav</sys_created_by>
+        <sys_created_on>2025-03-05 10:44:25</sys_created_on>
+        <sys_id>1312cb925384221027b678e0a0490e64</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>HR Manager Approval List</sys_name>
+        <sys_package display_value="HR Onboarding &amp;amp; Offboarding" source="x_1583423_hr_hroo">5f29c3f75323121027b678e0a0490ef4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HR Onboarding &amp;amp; Offboarding">5f29c3f75323121027b678e0a0490ef4</sys_scope>
+        <sys_update_name>sp_widget_1312cb925384221027b678e0a0490e64</sys_update_name>
+        <sys_updated_by>Manjusha.Jadhav</sys_updated_by>
+        <sys_updated_on>2025-03-05 11:02:04</sys_updated_on>
+        <template><![CDATA[<div class="approval-list-widget">
+    <div ng-if="noApprovalsMessage">
+        <p>{{noApprovalsMessage}}</p>
+    </div>
+    <div ng-repeat="approval in approvalList" class="approval-item">
+        <div>
+            <strong>Request Number:</strong> {{approval.request_number}}<br>
+            <strong>Requested For:</strong> {{approval.requested_for}}<br>
+            <strong>Request Type:</strong> {{approval.request_type}}<br>
+            <strong>Date Requested:</strong> {{approval.date_requested}}<br>
+            <strong>Approval Status:</strong> {{approval.approval_state}}<br>
+        </div>
+        <div class="approval-actions">
+            <button class="btn btn-success" ng-click="handleApproval(approval.approval_id, 'approve')">Approve</button>
+            <button class="btn btn-danger" ng-click="handleApproval(approval.approval_id, 'reject')">Reject</button>
+        </div>
+    </div>
+</div>
+]]></template>
+    </sp_widget>
+</record_update>

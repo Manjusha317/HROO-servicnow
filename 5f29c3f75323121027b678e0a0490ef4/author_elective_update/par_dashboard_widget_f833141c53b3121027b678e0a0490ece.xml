@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_widget">
+    <par_dashboard_widget action="DELETE">
+        <canvas display_value="">e63e441453b3121027b678e0a0490e58</canvas>
+        <component display_value="Image">15fe506403f8a98575b6df59008ea8f1</component>
+        <component_props>{"src":"10Things02a_v2.png","sources":"[]","fit":"fill","position":"center center","alt":"","href":"https://www.servicenow.com/","configAria":"{\"link\":{}}","id":"src","value":"10Things02a_v2.png","propLabel":"Image source"}</component_props>
+        <h>13</h>
+        <name/>
+        <stored_component/>
+        <sys_class_name>par_dashboard_widget</sys_class_name>
+        <sys_created_by>Manjusha.Jadhav</sys_created_by>
+        <sys_created_on>2025-02-14 06:36:39</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f833141c53b3121027b678e0a0490ece</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="HR Onboarding &amp;amp; Offboarding" source="x_1583423_hr_hroo">5f29c3f75323121027b678e0a0490ef4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HR Onboarding &amp;amp; Offboarding">5f29c3f75323121027b678e0a0490ef4</sys_scope>
+        <sys_update_name>par_dashboard_widget_f833141c53b3121027b678e0a0490ece</sys_update_name>
+        <sys_updated_by>Manjusha.Jadhav</sys_updated_by>
+        <sys_updated_on>2025-02-14 06:55:27</sys_updated_on>
+        <visualization/>
+        <w>1</w>
+        <widget_props/>
+        <x>0</x>
+        <y>31</y>
+    </par_dashboard_widget>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="HR Onboarding &amp;amp; Offboarding">5f29c3f75323121027b678e0a0490ef4</application>
+        <file_path/>
+        <instance_id>5b9be94adb66359c02d91729139619cc</instance_id>
+        <instance_name>dev215488</instance_name>
+        <name>par_dashboard_widget_f833141c53b3121027b678e0a0490ece</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_widget"><par_dashboard_widget action="INSERT_OR_UPDATE"><canvas display_value="">e63e441453b3121027b678e0a0490e58</canvas><component display_value="Image">15fe506403f8a98575b6df59008ea8f1</component><component_props>{"src":"10Things02a_v2.png","sources":"[]","fit":"fill","position":"center center","alt":"","href":"https://www.servicenow.com/","configAria":"{\"link\":{}}","id":"src","value":"10Things02a_v2.png","propLabel":"Image source"}</component_props><h>13</h><name/><stored_component/><sys_class_name>par_dashboard_widget</sys_class_name><sys_created_by>Manjusha.Jadhav</sys_created_by><sys_created_on>2025-02-14 06:36:39</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>f833141c53b3121027b678e0a0490ece</sys_id><sys_mod_count>1</sys_mod_count><sys_name/><sys_overrides/><sys_package display_value="HR Onboarding &amp;amp; Offboarding" source="x_1583423_hr_hroo">5f29c3f75323121027b678e0a0490ef4</sys_package><sys_policy/><sys_scope display_value="HR Onboarding &amp;amp; Offboarding">5f29c3f75323121027b678e0a0490ef4</sys_scope><sys_update_name>par_dashboard_widget_f833141c53b3121027b678e0a0490ece</sys_update_name><sys_updated_by>Manjusha.Jadhav</sys_updated_by><sys_updated_on>2025-02-14 06:55:27</sys_updated_on><visualization/><w>1</w><widget_props/><x>0</x><y>31</y></par_dashboard_widget></record_update>]]></payload>
+        <payload_hash>-1558714517</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>655097775363121027b678e0a0490ebe</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Manjusha.Jadhav</sys_created_by>
+        <sys_created_on>2025-02-14 06:55:28</sys_created_on>
+        <sys_id>1887585053f3121027b678e0a0490ee2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>195033dab4c0000001</sys_recorded_at>
+        <sys_updated_by>Manjusha.Jadhav</sys_updated_by>
+        <sys_updated_on>2025-02-14 06:55:28</sys_updated_on>
+        <type>PAR Dashboard Widget</type>
+        <update_guid>dc875850f0f312109d0de989ab77e4e1</update_guid>
+        <update_guid_history>dc875850f0f312109d0de989ab77e4e1:-1558714517,bc33141c78b31210b35ef3a6a87258cf:-215265717</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">8318949053f3121027b678e0a0490ece</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Manjusha.Jadhav</sys_created_by>
+        <sys_created_on>2025-02-14 06:58:07</sys_created_on>
+        <sys_db_object display_value="" name="par_dashboard_widget">par_dashboard_widget</sys_db_object>
+        <sys_id>0858bd5c989d4996abb58538aa165924</sys_id>
+        <sys_metadata>f833141c53b3121027b678e0a0490ece</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="HR Onboarding &amp;amp; Offboarding" source="x_1583423_hr_hroo">5f29c3f75323121027b678e0a0490ef4</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="HR Onboarding &amp;amp; Offboarding">5f29c3f75323121027b678e0a0490ef4</sys_scope>
+        <sys_scope_delete display_value="">426438089e2a41478a3875bc719e2ce1</sys_scope_delete>
+        <sys_update_name>par_dashboard_widget_f833141c53b3121027b678e0a0490ece</sys_update_name>
+        <sys_update_version display_value="par_dashboard_widget_f833141c53b3121027b678e0a0490ece">1887585053f3121027b678e0a0490ee2</sys_update_version>
+        <sys_updated_by>Manjusha.Jadhav</sys_updated_by>
+        <sys_updated_on>2025-02-14 06:58:07</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

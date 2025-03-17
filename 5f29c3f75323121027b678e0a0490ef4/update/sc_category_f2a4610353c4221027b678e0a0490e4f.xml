@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_category">
+    <sc_category action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description>single category for onbording and offboarding</description>
+        <entitlement_script/>
+        <header_icon/>
+        <homepage_image/>
+        <homepage_renderer display_value="Category Items">47ebe8aa3742300054b6a3549dbe5dfa</homepage_renderer>
+        <icon/>
+        <image/>
+        <location/>
+        <mobile_hide_description>false</mobile_hide_description>
+        <mobile_picture/>
+        <mobile_subcategory_render_type>list</mobile_subcategory_render_type>
+        <module/>
+        <order>0</order>
+        <parent/>
+        <roles/>
+        <sc_catalog display_value="HR Employee Services">2880544e5363121027b678e0a0490e3e</sc_catalog>
+        <sys_class_name>sc_category</sys_class_name>
+        <sys_created_by>Manjusha.Jadhav</sys_created_by>
+        <sys_created_on>2025-03-07 11:52:23</sys_created_on>
+        <sys_id>f2a4610353c4221027b678e0a0490e4f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Employee Lifecycle Services</sys_name>
+        <sys_package display_value="HR Onboarding &amp;amp; Offboarding" source="x_1583423_hr_hroo">5f29c3f75323121027b678e0a0490ef4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HR Onboarding &amp;amp; Offboarding">5f29c3f75323121027b678e0a0490ef4</sys_scope>
+        <sys_update_name>sc_category_f2a4610353c4221027b678e0a0490e4f</sys_update_name>
+        <sys_updated_by>Manjusha.Jadhav</sys_updated_by>
+        <sys_updated_on>2025-03-07 11:52:23</sys_updated_on>
+        <title>Employee Lifecycle Services</title>
+    </sc_category>
+    <sys_translated_text action="delete_multiple" query="documentkey=f2a4610353c4221027b678e0a0490e4f"/>
+</record_update>

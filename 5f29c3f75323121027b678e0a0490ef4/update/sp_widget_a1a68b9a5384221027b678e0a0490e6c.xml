@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function() {
+    // Ensure that the data exists and contains onboarding records
+    if (data.onboardingStatusList && data.onboardingStatusList.length > 0) {
+        api.controller.setData('onboardingStatusList', data.onboardingStatusList);
+    } else {
+        api.controller.setData('noOnboardingStatusMessage', "No onboarding requests at the moment.");
+    }
+}();
+]]></client_script>
+        <controller_as>c</controller_as>
+        <css>/* Container for the widget */
+.onboarding-status-widget {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Each item in the onboarding status list */
+.onboarding-status-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover effect on each item */
+.onboarding-status-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Title for the request */
+.onboarding-status-item strong {
+    color: #333;
+}
+
+/* No data message styling */
+.onboarding-status-widget p {
+    color: #888;
+    font-size: 14px;
+}
+</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>hr_onboarding_status</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>HR Onboarding Status</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+    var onboardingStatusList = [];
+
+    // Use GlideRecord to query the Onboarding Request table (adjust the table name if necessary)
+    var onboardingGr = new GlideRecord('x_1583423_hr_hroo_employee_onboarding');  // Replace with your Onboarding Request table name
+    onboardingGr.addQuery('state', '!=', 'Complete'); // Fetch records that are not complete
+    onboardingGr.addQuery('requested_for', gs.getUserID()); // Only the logged-in user
+    onboardingGr.query();
+
+    // Store the relevant details in an array
+    while (onboardingGr.next()) {
+        onboardingStatusList.push({
+            request_number: onboardingGr.number.toString(),  // Converting sys_id to string
+            status: onboardingGr.state.getDisplayValue(),  // Get the state display value
+            requested_for: onboardingGr.requested_for.getDisplayValue(),
+            date_requested: onboardingGr.sys_created_on.getDisplayValue()
+        });
+    }
+
+    // Return the data to the client script
+    data.onboardingStatusList = onboardingStatusList;
+})();
+]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>Manjusha.Jadhav</sys_created_by>
+        <sys_created_on>2025-03-05 11:04:13</sys_created_on>
+        <sys_id>a1a68b9a5384221027b678e0a0490e6c</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>HR Onboarding Status</sys_name>
+        <sys_package display_value="HR Onboarding &amp;amp; Offboarding" source="x_1583423_hr_hroo">5f29c3f75323121027b678e0a0490ef4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HR Onboarding &amp;amp; Offboarding">5f29c3f75323121027b678e0a0490ef4</sys_scope>
+        <sys_update_name>sp_widget_a1a68b9a5384221027b678e0a0490e6c</sys_update_name>
+        <sys_updated_by>Manjusha.Jadhav</sys_updated_by>
+        <sys_updated_on>2025-03-05 11:06:57</sys_updated_on>
+        <template><![CDATA[<div class="onboarding-status-widget">
+    <!-- Display the message if there are no onboarding requests -->
+    <div ng-if="noOnboardingStatusMessage">
+        <p>{{noOnboardingStatusMessage}}</p>
+    </div>
+
+    <!-- Iterate over each onboarding status item and display details -->
+    <div ng-repeat="status in onboardingStatusList" class="onboarding-status-item">
+        <div>
+            <strong>Request Number:</strong> {{status.request_number}}<br>
+            <strong>Requested For:</strong> {{status.requested_for}}<br>
+            <strong>Status:</strong> {{status.status}}<br>
+            <strong>Date Requested:</strong> {{status.date_requested}}<br>
+        </div>
+    </div>
+</div>
+]]></template>
+    </sp_widget>
+</record_update>

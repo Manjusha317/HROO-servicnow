@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="7f798b3f5323121027b678e0a0490e9f" label="Employee Onboarding" max_length="40" name="x_1583423_hr_hroo_employee_onboarding" type="collection">
+        <element label="Requested By" max_length="32" name="requested_by" reference="sys_user" type="reference"/>
+        <element choice="1" label="Employment Type" max_length="40" name="employment_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Contractor" value="contractor"/>
+                <element inactive_on_update="false" label="Part-time" value="part time"/>
+                <element inactive_on_update="false" label="Full-time" value="full time"/>
+                <element inactive_on_update="false" label="Intern" value="intern"/>
+            </choice>
+        </element>
+        <element label="Hiring Manager" max_length="32" name="hiring_manager" reference="sys_user" type="reference"/>
+        <element label="Related Knowledge Article" max_length="32" name="related_knowledge_article" reference="kb_knowledge" type="reference"/>
+        <element label="Location" max_length="32" name="location" reference="cmn_location" type="reference"/>
+        <element label="Requested For" max_length="32" name="requested_for" reference="sys_user" type="reference"/>
+        <element label="IT Equipment Required?" max_length="40" name="it_equipment_required" type="boolean"/>
+        <element label="Hardware Item" max_length="32" name="hardware_item" reference="cmdb_ci_hardware" type="reference"/>
+        <element choice="1" label="Status " max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="In Progress" sequence="2" value="in progress"/>
+                <element inactive_on_update="false" label="Completed" sequence="5" value="completed"/>
+                <element inactive_on_update="false" label="Pending Approval" sequence="4" value="pending approval"/>
+                <element inactive_on_update="false" label="New" sequence="1" value="new"/>
+                <element inactive_on_update="false" label="Draft" sequence="3" value="draft"/>
+                <element inactive_on_update="false" label="Canceled" sequence="6" value="canceled"/>
+            </choice>
+        </element>
+        <element label="Start Date" max_length="40" name="start_date" type="glide_date"/>
+        <element label="Employee Name" max_length="32" name="employee_name" reference="sys_user" type="reference"/>
+        <element choice="1" label="Equipment Type" max_length="40" name="equipment_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Software" value="software"/>
+                <element inactive_on_update="false" label="Hardware" value="hardware"/>
+            </choice>
+        </element>
+        <element label="Department" max_length="32" name="department" reference="cmn_department" type="reference"/>
+        <element label="Additional Notes" max_length="500" name="additional_notes" type="string"/>
+        <element label="Software Item" max_length="32" name="software_item" reference="cmdb_ci_application_software" type="reference"/>
+        <element label="Manager" max_length="32" name="manager" reference="sys_user" type="reference"/>
+        <element choice="1" label="Approval Status" max_length="40" name="approval_status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Approved" value="approved"/>
+                <element inactive_on_update="false" label="Pending" value="pending"/>
+                <element inactive_on_update="false" label="Rejected" value="rejected"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="department"/>
+        </index>
+        <index name="index2">
+            <element name="employee_name"/>
+        </index>
+        <index name="index3">
+            <element name="hardware_item"/>
+        </index>
+        <index name="index4">
+            <element name="hiring_manager"/>
+        </index>
+        <index name="index5">
+            <element name="location"/>
+        </index>
+        <index name="index6">
+            <element name="manager"/>
+        </index>
+        <index name="index7">
+            <element name="related_knowledge_article"/>
+        </index>
+        <index name="index8">
+            <element name="requested_by"/>
+        </index>
+        <index name="index9">
+            <element name="requested_for"/>
+        </index>
+        <index name="index10">
+            <element name="software_item"/>
+        </index>
+    </element>
+</database>

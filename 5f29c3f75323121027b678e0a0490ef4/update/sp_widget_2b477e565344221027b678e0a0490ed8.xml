@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller = function($scope, $timeout) {
+    var c = this;
+    c.searchText = '';
+    c.filteredEmployees = [];
+
+    // Function to filter employees based on search text
+    c.filterResults = function() {
+        if (!c.data || !c.data.employees) return;
+        
+        var searchLower = c.searchText.toLowerCase();
+        c.filteredEmployees = c.data.employees.filter(function(emp) {
+            return emp.name.toLowerCase().includes(searchLower) ||
+                   emp.department.toLowerCase().includes(searchLower) ||
+                   emp.manager.toLowerCase().includes(searchLower);
+        });
+    };
+
+    // Watch for search text changes and update filtered results
+    $scope.$watch(function() {
+        return c.searchText;
+    }, function() {
+        $timeout(c.filterResults, 300); // Adding slight delay for performance
+    });
+
+    // Initialize the filtering
+    c.filterResults();
+};
+]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.filter-search-container {
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.search-input, .filter-dropdown {
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+th {
+    background: #f4f4f4;
+    text-align: left;
+}
+</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>hr_filters___search</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>HR Filters &amp; Search</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+    var result = [];
+
+    var gr = new GlideRecord('sys_user'); // Replace 'your_table' with the actual table name
+    if (gr.isValid()) {  // Check if the table exists
+        gr.addQuery('active', true);  // Example condition (modify as needed)
+        gr.orderByDesc('sys_created_on');  // Order by latest records
+        gr.setLimit(20);  // Display only first 20 records
+        gr.query();
+
+        while (gr.next()) {
+            result.push({
+                sys_id: gr.getUniqueValue(),
+                name: gr.getValue('employee_name'),  // Replace with actual field
+                department: gr.getValue('department'),  // Replace with actual field
+                manager: gr.getValue('manager'),  // Replace with actual field
+                start_date: gr.getValue('start_date')  // Replace with actual field
+            });
+        }
+    }
+
+    data.employees = result;
+})();
+]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>Manjusha.Jadhav</sys_created_by>
+        <sys_created_on>2025-03-05 09:57:11</sys_created_on>
+        <sys_id>2b477e565344221027b678e0a0490ed8</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>HR Filters &amp; Search</sys_name>
+        <sys_package display_value="HR Onboarding &amp;amp; Offboarding" source="x_1583423_hr_hroo">5f29c3f75323121027b678e0a0490ef4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HR Onboarding &amp;amp; Offboarding">5f29c3f75323121027b678e0a0490ef4</sys_scope>
+        <sys_update_name>sp_widget_2b477e565344221027b678e0a0490ed8</sys_update_name>
+        <sys_updated_by>Manjusha.Jadhav</sys_updated_by>
+        <sys_updated_on>2025-03-05 10:12:40</sys_updated_on>
+        <template><![CDATA[<div class="filter-search-container">
+    <input type="text" ng-model="searchQuery" ng-change="filterRequests()" placeholder="Search Employee..." class="search-input" />
+    
+    <select ng-model="selectedDepartment" ng-change="filterRequests()" class="filter-dropdown">
+        <option value="">All Departments</option>
+        <option ng-repeat="dept in c.data.departments" value="{{ dept.label }}">{{ dept.label }}</option>
+    </select>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Request #</th>
+                <th>Employee</th>
+                <th>Department</th>
+                <th>Status</th>
+                <th>Request Type</th>
+                <th>Created On</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="request in requests">
+                <td>{{ request.request_number }}</td>
+                <td>{{ request.employee_name }}</td>
+                <td>{{ request.department }}</td>
+                <td>{{ request.status }}</td>
+                <td>{{ request.request_type }}</td>
+                <td>{{ request.created_on }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+]]></template>
+    </sp_widget>
+</record_update>

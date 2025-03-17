@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="DELETE">
+        <sc_cat_item display_value="Employee Onboarding Request">5f71dfb75363121027b678e0a0490e16</sc_cat_item>
+        <sc_category display_value="Onboarding Services Category">54d0dc4e5363121027b678e0a0490eef</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>Manjusha.Jadhav</sys_created_by>
+        <sys_created_on>2025-02-13 07:15:49</sys_created_on>
+        <sys_id>a492d33b5363121027b678e0a0490e9c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Onboarding Services Category.Employee Onboarding Request</sys_name>
+        <sys_package display_value="HR Onboarding &amp;amp; Offboarding" source="x_1583423_hr_hroo">5f29c3f75323121027b678e0a0490ef4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HR Onboarding &amp;amp; Offboarding">5f29c3f75323121027b678e0a0490ef4</sys_scope>
+        <sys_update_name>sc_cat_item_category_a492d33b5363121027b678e0a0490e9c</sys_update_name>
+        <sys_updated_by>Manjusha.Jadhav</sys_updated_by>
+        <sys_updated_on>2025-02-13 07:15:49</sys_updated_on>
+    </sc_cat_item_category>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="HR Onboarding &amp;amp; Offboarding">5f29c3f75323121027b678e0a0490ef4</application>
+        <file_path/>
+        <instance_id>5b9be94adb66359c02d91729139619cc</instance_id>
+        <instance_name>dev215488</instance_name>
+        <name>sc_cat_item_category_a492d33b5363121027b678e0a0490e9c</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category"><sc_cat_item_category action="INSERT_OR_UPDATE"><sc_cat_item display_value="Employee Onboarding Request">5f71dfb75363121027b678e0a0490e16</sc_cat_item><sc_category display_value="Onboarding Services Category">54d0dc4e5363121027b678e0a0490eef</sc_category><sys_class_name>sc_cat_item_category</sys_class_name><sys_created_by>Manjusha.Jadhav</sys_created_by><sys_created_on>2025-02-13 07:15:49</sys_created_on><sys_id>a492d33b5363121027b678e0a0490e9c</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Onboarding Services Category.Employee Onboarding Request</sys_name><sys_package display_value="HR Onboarding &amp;amp; Offboarding" source="x_1583423_hr_hroo">5f29c3f75323121027b678e0a0490ef4</sys_package><sys_policy/><sys_scope display_value="HR Onboarding &amp;amp; Offboarding">5f29c3f75323121027b678e0a0490ef4</sys_scope><sys_update_name>sc_cat_item_category_a492d33b5363121027b678e0a0490e9c</sys_update_name><sys_updated_by>Manjusha.Jadhav</sys_updated_by><sys_updated_on>2025-02-13 07:15:49</sys_updated_on></sc_cat_item_category></record_update>]]></payload>
+        <payload_hash>-407216156</payload_hash>
+        <record_name>Onboarding Services Category.Employee Onboarding Request</record_name>
+        <reverted_from/>
+        <source>655097775363121027b678e0a0490ebe</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Manjusha.Jadhav</sys_created_by>
+        <sys_created_on>2025-02-13 07:15:49</sys_created_on>
+        <sys_id>e492d33b5363121027b678e0a0490ea0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>194fe29f14b0000001</sys_recorded_at>
+        <sys_updated_by>Manjusha.Jadhav</sys_updated_by>
+        <sys_updated_on>2025-02-13 07:15:49</sys_updated_on>
+        <type>Catalog Item Category</type>
+        <update_guid>e892d33b40631210a324cfd242e1b79f</update_guid>
+        <update_guid_history>e892d33b40631210a324cfd242e1b79f:-407216156</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Onboarding Services Category.Employee Onboarding Request">21baf921533b121027b678e0a0490ea1</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Manjusha.Jadhav</sys_created_by>
+        <sys_created_on>2025-02-18 11:21:18</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_category">sc_cat_item_category</sys_db_object>
+        <sys_id>3bbdba74f8d44204a6391fefb9ba7c64</sys_id>
+        <sys_metadata>a492d33b5363121027b678e0a0490e9c</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Onboarding Services Category.Employee Onboarding Request</sys_name>
+        <sys_package display_value="HR Onboarding &amp;amp; Offboarding" source="x_1583423_hr_hroo">5f29c3f75323121027b678e0a0490ef4</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="HR Onboarding &amp;amp; Offboarding">5f29c3f75323121027b678e0a0490ef4</sys_scope>
+        <sys_scope_delete display_value="">426438089e2a41478a3875bc719e2ce1</sys_scope_delete>
+        <sys_update_name>sc_cat_item_category_a492d33b5363121027b678e0a0490e9c</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_category_a492d33b5363121027b678e0a0490e9c">e492d33b5363121027b678e0a0490ea0</sys_update_version>
+        <sys_updated_by>Manjusha.Jadhav</sys_updated_by>
+        <sys_updated_on>2025-02-18 11:21:18</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

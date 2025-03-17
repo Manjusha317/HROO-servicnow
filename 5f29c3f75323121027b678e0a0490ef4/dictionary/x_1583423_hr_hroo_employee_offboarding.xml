@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="4d1fe81e5394221027b678e0a0490ebd" label="Employee Offboarding" max_length="40" name="x_1583423_hr_hroo_employee_offboarding" type="collection">
+        <element choice="1" label="Reason for Exit&#9;" max_length="40" name="reason_for_exit" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Resignation" value="resignation"/>
+                <element inactive_on_update="false" label="Retirement" value="retirement"/>
+                <element inactive_on_update="false" label="Termination" value="termination"/>
+            </choice>
+        </element>
+        <element choice="1" label="Equipment Return Status" max_length="40" name="equipment_return_status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Returned" value="returned"/>
+                <element inactive_on_update="false" label="Lost" value="lost"/>
+                <element inactive_on_update="false" label="Pending" value="pending"/>
+            </choice>
+        </element>
+        <element label="Final Paycheck Processed?" max_length="40" name="final_paycheck_processed" type="boolean"/>
+        <element label="HR Representative" max_length="32" name="hr_representative" reference="sys_user" type="reference"/>
+        <element label="Requested For" max_length="32" name="requested_for" reference="sys_user" type="reference"/>
+        <element default="javascript:gs.getUserID();" dynamic_default_value="bdcb83a85f220100a9ad2572f2b4773d" label="Requested By" max_length="32" name="requested_by" reference="sys_user" type="reference" use_dynamic_default="true"/>
+        <element label="Last Working Day" max_length="40" name="last_working_day" type="glide_date"/>
+        <element label="Access Revocation Required?" max_length="40" name="access_revocation_required" type="boolean"/>
+        <element label="Exit Interview Scheduled?" max_length="40" name="exit_interview_scheduled" type="boolean"/>
+        <element choice="1" label="Status" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="New" value="new"/>
+                <element inactive_on_update="false" label="Pending Approval" value="pending approval"/>
+                <element inactive_on_update="false" label="Cancled" value="cancled"/>
+                <element inactive_on_update="false" label="Completed" value="completed"/>
+                <element inactive_on_update="false" label="Draft" value="draft"/>
+                <element inactive_on_update="false" label="In Progress" value="in progress"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="hr_representative"/>
+        </index>
+        <index name="index2">
+            <element name="requested_by"/>
+        </index>
+        <index name="index3">
+            <element name="requested_for"/>
+        </index>
+    </element>
+</database>

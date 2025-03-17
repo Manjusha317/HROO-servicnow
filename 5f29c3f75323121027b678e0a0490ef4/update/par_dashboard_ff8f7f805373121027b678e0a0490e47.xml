@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard">
+    <par_dashboard action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <certified>false</certified>
+        <description>Dashboard to manage employee onboarding and employee offboarding process (01-02-02-2025)</description>
+        <experience/>
+        <grid>48</grid>
+        <name>HR Onboarding &amp; Offboarding Dashboard</name>
+        <sys_class_name>par_dashboard</sys_class_name>
+        <sys_created_by>Manjusha.Jadhav</sys_created_by>
+        <sys_created_on>2025-02-14 05:10:50</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ff8f7f805373121027b678e0a0490e47</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>HR Onboarding &amp; Offboarding Dashboard</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="HR Onboarding &amp;amp; Offboarding" source="x_1583423_hr_hroo">5f29c3f75323121027b678e0a0490ef4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HR Onboarding &amp;amp; Offboarding">5f29c3f75323121027b678e0a0490ef4</sys_scope>
+        <sys_update_name>par_dashboard_ff8f7f805373121027b678e0a0490e47</sys_update_name>
+        <sys_updated_by>Manjusha.Jadhav</sys_updated_by>
+        <sys_updated_on>2025-02-14 05:10:50</sys_updated_on>
+        <sys_ux_app_config/>
+        <sys_ux_app_route/>
+        <sys_ux_macroponent/>
+        <sys_ux_screen/>
+        <sys_ux_screen_type/>
+    </par_dashboard>
+</record_update>

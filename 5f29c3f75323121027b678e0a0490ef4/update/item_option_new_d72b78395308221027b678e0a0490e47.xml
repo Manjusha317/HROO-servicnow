@@ -30,7 +30,7 @@
         <include_none>false</include_none>
         <instructions/>
         <layout>normal</layout>
-        <list_table/>
+        <list_table>sys_user</list_table>
         <lookup_label/>
         <lookup_price/>
         <lookup_table/>
@@ -79,14 +79,14 @@
         <sys_created_by>Manjusha.Jadhav</sys_created_by>
         <sys_created_on>2025-03-03 11:37:54</sys_created_on>
         <sys_id>d72b78395308221027b678e0a0490e47</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Employee Name </sys_name>
         <sys_package display_value="HR Onboarding &amp;amp; Offboarding" source="x_1583423_hr_hroo">5f29c3f75323121027b678e0a0490ef4</sys_package>
         <sys_policy/>
         <sys_scope display_value="HR Onboarding &amp;amp; Offboarding">5f29c3f75323121027b678e0a0490ef4</sys_scope>
         <sys_update_name>item_option_new_d72b78395308221027b678e0a0490e47</sys_update_name>
         <sys_updated_by>Manjusha.Jadhav</sys_updated_by>
-        <sys_updated_on>2025-03-03 12:15:45</sys_updated_on>
+        <sys_updated_on>2025-03-10 08:01:32</sys_updated_on>
         <table/>
         <tooltip/>
         <topic_block/>
@@ -94,7 +94,7 @@
         <ui_page/>
         <unique>false</unique>
         <use_dynamic_default>false</use_dynamic_default>
-        <use_reference_qualifier>simple</use_reference_qualifier>
+        <use_reference_qualifier>dynamic</use_reference_qualifier>
         <validate_regex/>
         <variable_name/>
         <variable_set/>
