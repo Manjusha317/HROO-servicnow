@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function() {  /* widget controller */  var c = this;};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #ffffff;
+    padding: 10px 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    height: 40px;
+}
+
+.search-bar {
+    flex-grow: 1;
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.nav-menu ul {
+    list-style: none;
+    display: flex;
+}
+
+.nav-menu li {
+    margin: 0 10px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #333;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+}
+
+.user-profile img {
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.fa-bell {
+    font-size: 18px;
+    margin-right: 15px;
+}
+</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>hr_portal_header1</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>hr portal header1</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+    var user = gs.getUser();
+    data.user_name = user.getDisplayName();
+   // data.user_avatar = user.getPhoto() || '/no-avatar.png';
+})();
+]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>Manjusha.Jadhav</sys_created_by>
+        <sys_created_on>2025-03-19 10:56:35</sys_created_on>
+        <sys_id>022b4ffe53d0221027b678e0a0490e21</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>hr portal header1</sys_name>
+        <sys_package display_value="HR Onboarding &amp;amp; Offboarding" source="x_1583423_hr_hroo">5f29c3f75323121027b678e0a0490ef4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HR Onboarding &amp;amp; Offboarding">5f29c3f75323121027b678e0a0490ef4</sys_scope>
+        <sys_update_name>sp_widget_022b4ffe53d0221027b678e0a0490e21</sys_update_name>
+        <sys_updated_by>Manjusha.Jadhav</sys_updated_by>
+        <sys_updated_on>2025-03-19 10:57:46</sys_updated_on>
+        <template><![CDATA[<div class="header-container">
+
+    <div class="search-bar">
+        <input type="text" placeholder="Search for HR Services..." ng-model="searchQuery">
+        <button ng-click="search()">
+            <i class="fa fa-search"></i>
+        </button>
+    </div>
+
+    <div class="nav-menu">
+        <ul>
+            <li><a href="?id=hr_home">Home</a></li>
+            <li><a href="?id=hr_services">HR Services</a></li>
+            <li><a href="?id=hr_requests">My Requests</a></li>
+            <li><a href="?id=hr_policies">Policies</a></li>
+        </ul>
+    </div>
+
+    <div class="user-profile">
+        <i class="fa fa-bell"></i> <!-- Notifications -->
+        <div class="profile">
+            <img src="{{data.user_avatar}}" alt="User">
+            <span>{{data.user_name}}</span>
+        </div>
+    </div>
+</div>
+]]></template>
+    </sp_widget>
+</record_update>

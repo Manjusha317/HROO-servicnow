@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="DELETE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>1</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">11ee836453d4221027b678e0a0490e34</sp_column>
+        <sp_widget display_value="HR Employee List">fc1d3ada5344221027b678e0a0490e37</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>Manjusha.Jadhav</sys_created_by>
+        <sys_created_on>2025-03-12 11:28:01</sys_created_on>
+        <sys_id>823f87a453d4221027b678e0a0490e97</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="HR Onboarding &amp;amp; Offboarding" source="x_1583423_hr_hroo">5f29c3f75323121027b678e0a0490ef4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HR Onboarding &amp;amp; Offboarding">5f29c3f75323121027b678e0a0490ef4</sys_scope>
+        <sys_update_name>sp_instance_823f87a453d4221027b678e0a0490e97</sys_update_name>
+        <sys_updated_by>Manjusha.Jadhav</sys_updated_by>
+        <sys_updated_on>2025-03-20 07:10:19</sys_updated_on>
+        <title/>
+        <url/>
+        <widget_parameters/>
+    </sp_instance>
+    <sys_translated_text action="DELETE" query="documentkey=823f87a453d4221027b678e0a0490e97"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="HR Onboarding &amp;amp; Offboarding">5f29c3f75323121027b678e0a0490ef4</application>
+        <file_path/>
+        <instance_id>5b9be94adb66359c02d91729139619cc</instance_id>
+        <instance_name>dev215488</instance_name>
+        <name>sp_instance_823f87a453d4221027b678e0a0490e97</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance"><sp_instance action="INSERT_OR_UPDATE"><active>true</active><class_name/><color>default</color><css/><glyph/><id/><order>1</order><roles/><short_description/><size>md</size><sp_column display_value="1">11ee836453d4221027b678e0a0490e34</sp_column><sp_widget display_value="HR Employee List">fc1d3ada5344221027b678e0a0490e37</sp_widget><sys_class_name>sp_instance</sys_class_name><sys_created_by>Manjusha.Jadhav</sys_created_by><sys_created_on>2025-03-12 11:28:01</sys_created_on><sys_id>823f87a453d4221027b678e0a0490e97</sys_id><sys_mod_count>7</sys_mod_count><sys_name/><sys_package display_value="HR Onboarding &amp;amp; Offboarding" source="x_1583423_hr_hroo">5f29c3f75323121027b678e0a0490ef4</sys_package><sys_policy/><sys_scope display_value="HR Onboarding &amp;amp; Offboarding">5f29c3f75323121027b678e0a0490ef4</sys_scope><sys_update_name>sp_instance_823f87a453d4221027b678e0a0490e97</sys_update_name><sys_updated_by>Manjusha.Jadhav</sys_updated_by><sys_updated_on>2025-03-20 07:10:19</sys_updated_on><title/><url/><widget_parameters/></sp_instance><sys_translated_text action="delete_multiple" query="documentkey=823f87a453d4221027b678e0a0490e97"/></record_update>]]></payload>
+        <payload_hash>1908473460</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>acc5c5565318221027b678e0a0490e67</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Manjusha.Jadhav</sys_created_by>
+        <sys_created_on>2025-03-20 07:10:19</sys_created_on>
+        <sys_id>25f0e7835390221027b678e0a0490e60</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>195b2637e200000001</sys_recorded_at>
+        <sys_updated_by>Manjusha.Jadhav</sys_updated_by>
+        <sys_updated_on>2025-03-20 07:10:19</sys_updated_on>
+        <type>Instance</type>
+        <update_guid>a9f0e783279022108582ae721193395f</update_guid>
+        <update_guid_history>a9f0e783279022108582ae721193395f:1908473460,e4f06b83869022100efa568a46336a7e:-1015010605,bae02b83899022100c9c77a2d5595de8:356472626,148f0fa406d422102b3ef8ab15e870d2:1727955857,437f0fa448d42210118289972f00264c:-1195528208,b04fc7a468d4221009fcbed8e88cbef9:175955023,933fc7a4f8d422100a4778ae5497705f:-1195528208,4e3f87a475d422101b5b3fbd4f340098:1727955857</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">5af06b835390221027b678e0a0490ea2</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Manjusha.Jadhav</sys_created_by>
+        <sys_created_on>2025-03-20 07:10:23</sys_created_on>
+        <sys_db_object display_value="" name="sp_instance">sp_instance</sys_db_object>
+        <sys_id>c70a081f6cc74dec987f590bb09a0581</sys_id>
+        <sys_metadata>823f87a453d4221027b678e0a0490e97</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="HR Onboarding &amp;amp; Offboarding" source="x_1583423_hr_hroo">5f29c3f75323121027b678e0a0490ef4</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="HR Onboarding &amp;amp; Offboarding">5f29c3f75323121027b678e0a0490ef4</sys_scope>
+        <sys_scope_delete display_value="">426438089e2a41478a3875bc719e2ce1</sys_scope_delete>
+        <sys_update_name>sp_instance_823f87a453d4221027b678e0a0490e97</sys_update_name>
+        <sys_update_version display_value="sp_instance_823f87a453d4221027b678e0a0490e97">25f0e7835390221027b678e0a0490e60</sys_update_version>
+        <sys_updated_by>Manjusha.Jadhav</sys_updated_by>
+        <sys_updated_on>2025-03-20 07:10:23</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

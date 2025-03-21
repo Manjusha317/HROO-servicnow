@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="5bad09165358221027b678e0a0490eb7" extends="task" label="Task HROO" max_length="40" name="x_1583423_hr_hroo_task_hroo" type="collection">
+        <element label="Approved By" max_length="32" name="approved_by" reference="imp_user" type="reference"/>
+        <element label="Approval Required&#9;" max_length="40" name="approval_required" type="boolean"/>
+        <element label="Related Request" max_length="32" name="related_request" type="document_id"/>
+    </element>
+</database>

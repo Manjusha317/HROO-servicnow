@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_theme">
+    <sp_theme action="INSERT_OR_UPDATE">
+        <css_variables/>
+        <footer display_value="HRMadrid Header">a8d107b473131300c629e1e54cf6a703</footer>
+        <footer_fixed>true</footer_fixed>
+        <header display_value="LegalFooter">64407ec3532332000d620d0323dc3436</header>
+        <name>HROO Theme</name>
+        <navbar_fixed>true</navbar_fixed>
+        <sys_class_name>sp_theme</sys_class_name>
+        <sys_created_by>Manjusha.Jadhav</sys_created_by>
+        <sys_created_on>2025-03-20 07:14:58</sys_created_on>
+        <sys_id>5ee16fc35390221027b678e0a0490ea1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>HROO Theme</sys_name>
+        <sys_package display_value="HR Onboarding &amp;amp; Offboarding" source="x_1583423_hr_hroo">5f29c3f75323121027b678e0a0490ef4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HR Onboarding &amp;amp; Offboarding">5f29c3f75323121027b678e0a0490ef4</sys_scope>
+        <sys_update_name>sp_theme_5ee16fc35390221027b678e0a0490ea1</sys_update_name>
+        <sys_updated_by>Manjusha.Jadhav</sys_updated_by>
+        <sys_updated_on>2025-03-20 07:14:58</sys_updated_on>
+        <turn_off_scss_compilation>false</turn_off_scss_compilation>
+    </sp_theme>
+</record_update>
