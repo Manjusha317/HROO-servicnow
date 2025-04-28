@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>26000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Employee Onboarding Request Flow </description>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>employee_onboarding_request_flow</internal_name>
+        <label_cache>[{"name":"0c108244-a62f-4541-a4f2-24627d6c74d7.Record.department","label":"1 - Look Up Record➛User Record➛Department","reference":"cmn_department","reference_display":"Department","type":"reference","base_type":"reference","parent_table_name":"sys_user","column_name":"department","usedInstances":{"237834be-bb3b-43f5-8df4-706984851e5e":["record"]}}]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <master_snapshot_digest/>
+        <name>Employee Onboarding Request Flow</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>Manjusha.Jadhav</sys_created_by>
+        <sys_created_on>2025-03-21 12:25:35</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>59b2fd2753d4221027b678e0a0490e98</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Employee Onboarding Request Flow</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="HR Onboarding &amp;amp; Offboarding" source="x_1583423_hr_hroo">5f29c3f75323121027b678e0a0490ef4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HR Onboarding &amp;amp; Offboarding">5f29c3f75323121027b678e0a0490ef4</sys_scope>
+        <sys_update_name>sys_hub_flow_59b2fd2753d4221027b678e0a0490e98</sys_update_name>
+        <sys_updated_by>Manjusha.Jadhav</sys_updated_by>
+        <sys_updated_on>2025-03-21 12:42:53</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=59b2fd2753d4221027b678e0a0490e98"/>
+    <sys_variable_value action="delete_multiple" query="document_key=59b2fd2753d4221027b678e0a0490e98"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=59b2fd2753d4221027b678e0a0490e98"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=59b2fd2753d4221027b678e0a0490e98^sys_idNOT IN55b2b5e753d4221027b678e0a0490e86"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>59b2fd2753d4221027b678e0a0490e98</id>
+        <name>Employee Onboarding Request Flow</name>
+        <sys_created_by>Manjusha.Jadhav</sys_created_by>
+        <sys_created_on>2025-03-21 12:25:35</sys_created_on>
+        <sys_id>55b2b5e753d4221027b678e0a0490e86</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>Manjusha.Jadhav</sys_updated_by>
+        <sys_updated_on>2025-03-21 12:25:35</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=55b2b5e753d4221027b678e0a0490e86"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=59b2fd2753d4221027b678e0a0490e98^sys_idNOT IN72a6f12f53d4221027b678e0a0490ebb,bea6f12f53d4221027b678e0a0490ec4,f6a6f12f53d4221027b678e0a0490ec8"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Employee Onboarding Request Flow">59b2fd2753d4221027b678e0a0490e98</model>
+        <model_id>59b2fd2753d4221027b678e0a0490e98</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_59b2fd2753d4221027b678e0a0490e98</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>Manjusha.Jadhav</sys_created_by>
+        <sys_created_on>2025-03-21 12:42:53</sys_created_on>
+        <sys_id>72a6f12f53d4221027b678e0a0490ebb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="HR Onboarding &amp;amp; Offboarding">5f29c3f75323121027b678e0a0490ef4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Manjusha.Jadhav</sys_updated_by>
+        <sys_updated_on>2025-03-21 12:42:53</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=72a6f12f53d4221027b678e0a0490ebb"/>
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FDCollection</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>global</scope_name>
+        <serialized_content>{"FlowDesigner:FDCollection":{"$COCollectionField":[{"FDChangeDetails":{"previous_display_value":"String","previous_display_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Previous Display Value\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\"}"},"previous_value":"String","previous_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Previous Value\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\"}"},"current_display_value":"String","current_display_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Current Display Value\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\"}"},"current_value":"String","current_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Current Value\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\"}"},"field_name":"String","field_name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Field Name\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"pwd2droppable\":\"true\",\"default_value\":\"\",\"label\":\"Changed Fields\",\"mandatory\":\"false\",\"child_name\":\"FDChangeDetails\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDCollection\",\"child_label\":\"FDChangeDetails\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"100\",\"max_length\":\"4000\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FDCollection.$type_facets":{"SimpleMapFacet":"{\"pwd2droppable\":\"true\",\"default_value\":\"\",\"label\":\"Changed Fields\",\"mandatory\":\"false\",\"child_name\":\"FDChangeDetails\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDCollection\",\"child_label\":\"FDChangeDetails\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"100\",\"max_length\":\"4000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-06-13 23:19:20</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path/>
+        <sys_id>f4f014150f023300ecf0cc52ff767eed</sys_id>
+        <sys_mod_count>101</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Flow Designer Designer Model" source="com.glide.hub.designer_backend.model">5b965bacdcd212104f34465061b06a9b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Global">global</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 05:06:11</sys_updated_on>
+        <type>complex_object_collection</type>
+    </sys_complex_object>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Employee Onboarding Request Flow">59b2fd2753d4221027b678e0a0490e98</model>
+        <model_id>59b2fd2753d4221027b678e0a0490e98</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_59b2fd2753d4221027b678e0a0490e98</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>Manjusha.Jadhav</sys_created_by>
+        <sys_created_on>2025-03-21 12:42:53</sys_created_on>
+        <sys_id>bea6f12f53d4221027b678e0a0490ec4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="HR Onboarding &amp;amp; Offboarding">5f29c3f75323121027b678e0a0490ef4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Manjusha.Jadhav</sys_updated_by>
+        <sys_updated_on>2025-03-21 12:42:53</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=bea6f12f53d4221027b678e0a0490ec4"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Employee Onboarding Request Flow">59b2fd2753d4221027b678e0a0490e98</model>
+        <model_id>59b2fd2753d4221027b678e0a0490e98</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_59b2fd2753d4221027b678e0a0490e98</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>Manjusha.Jadhav</sys_created_by>
+        <sys_created_on>2025-03-21 12:42:53</sys_created_on>
+        <sys_id>f6a6f12f53d4221027b678e0a0490ec8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="HR Onboarding &amp;amp; Offboarding">5f29c3f75323121027b678e0a0490ef4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Manjusha.Jadhav</sys_updated_by>
+        <sys_updated_on>2025-03-21 12:42:53</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=f6a6f12f53d4221027b678e0a0490ec8"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=59b2fd2753d4221027b678e0a0490e98"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=59b2fd2753d4221027b678e0a0490e98"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=59b2fd2753d4221027b678e0a0490e98^sys_idNOT INbaa6f12f53d4221027b678e0a0490efe"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Employee Onboarding Request Flow">59b2fd2753d4221027b678e0a0490e98</flow>
+        <name>Created or Updated</name>
+        <remote_sys_id/>
+        <sys_created_by>Manjusha.Jadhav</sys_created_by>
+        <sys_created_on>2025-03-21 12:42:53</sys_created_on>
+        <sys_id>baa6f12f53d4221027b678e0a0490efe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>Manjusha.Jadhav</sys_updated_by>
+        <sys_updated_on>2025-03-21 12:42:53</sys_updated_on>
+        <trigger_definition display_value="Created or Updated">a45d9180c32222002841b63b12d3aea7</trigger_definition>
+        <trigger_inputs>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</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create_or_update</trigger_type>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=59b2fd2753d4221027b678e0a0490e98^sys_idNOT IN7aa6352f53d4221027b678e0a0490e03,b6a6352f53d4221027b678e0a0490e02,baa6352f53d4221027b678e0a0490e00"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Employee Onboarding Request Flow">59b2fd2753d4221027b678e0a0490e98</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>Manjusha.Jadhav</sys_created_by>
+        <sys_created_on>2025-03-21 12:42:53</sys_created_on>
+        <sys_id>7aa6352f53d4221027b678e0a0490e03</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="HR Onboarding &amp;amp; Offboarding">5f29c3f75323121027b678e0a0490ef4</sys_scope>
+        <sys_updated_by>Manjusha.Jadhav</sys_updated_by>
+        <sys_updated_on>2025-03-21 12:42:53</sys_updated_on>
+        <ui_id>2c644a52-6367-4245-b2ba-b6f3a307d3da</ui_id>
+        <values>H4sIAAAAAAAA/+2X30/bMBDH/xUrz1WX/kopbwyEhjRAgoo9IBQ5ttN4c+LMcSgd4n/fOXGahkKo6KiY1Ddyzt19z/e5S7l9dDh1Dp0hPXC9IBzisTvoD1z3oD+ZBINJ6B6MJ26PUKfjJDhm8KZiRCrzfI9FbgzwJ+VZKvDipraQiAuqWOIc3t51nBQrcNZMOYePz470ImW+wAET4HgiSR6zRKOzE4ixqbDKe4rVjGl0VQl8Ltikgmdqk/jcGOHIyHI7DnvQLKEMkoZYZKzjxDihWEu1WFoUw/QyEbUh4omGkEdZJgnHmmVIRwyxGHOB5lxHCKMyfdcx8R4y/gckDPomVMjgEohRxBPCKShyVsy+vVM4PquPSSQ5YZep5jIpL1rjQFR3LkUeJxdl1aYrLMS50CtdyTOIy1JTptGtVQ41hNeRnF9VeU95UlyILVBIgsXyCWuteJBDnUUjBcOqjucXkkxMyMQEK+44xmnKk5mfKnnPi8AgM+7OBDx0QyHn4J/xWdLFxNTUhQvH3VOwnxTmG6y4KfAcwoDzU3FB/u/caCpLbCY37/pF3+HVjCie6iMIfM9sCU8dy3tv0oYVHdb4rMT8EOanJj66KONvqq3h/IpWi3vDZmnvbUX7FBDX5ayVcCNtZSwJP3CbhL9C9j8n2gp9N9Ifgy30NfNLGm1tRfI3cX4LYtfzgsALRuNBDcqEhHQchB4ek0ENxhx2k4qx+uUXu2mF5N46ynaE34kzOH85LcrrbKyycoZNJ3LK0I9KblsFlu9ASthDSQ13fyu4SxKRlgh6JxawwJeZjbFe7zrCGvEMZdCuLppKxK34FY8OWsgcxXmm4TUNJ42xaXwThjuZGNtaaz15se//xUhtOzqj9h2La/Bw5Gv5Mav/Gu4pmVVzsoGk5ZDJdX12HLIqpp2GQfs0lD8B1oZhZZG7+1XeWOWUCR7zornlxGyLIm3tO3MbrSZkFyhuIKlyPD5e1/cKisP3LeY9i7tjsdf63xbzGr0OdgPjBpoqx6/PaAzacBztcfzsOI7aW08azc7y4Ccjeief6rd1LR2Xql5S+gqa3v6j/Zl+LOLWdof95s6RdPExDH6bnn+vCNxA0nIploLWFFr2Ih2LmrzxlkvRG40G3p691a2YzmmfKpmmtratNuPdX2TdoTSxFQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Employee Onboarding Request Flow">59b2fd2753d4221027b678e0a0490e98</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>Manjusha.Jadhav</sys_created_by>
+        <sys_created_on>2025-03-21 12:42:53</sys_created_on>
+        <sys_id>b6a6352f53d4221027b678e0a0490e02</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="HR Onboarding &amp;amp; Offboarding">5f29c3f75323121027b678e0a0490ef4</sys_scope>
+        <sys_updated_by>Manjusha.Jadhav</sys_updated_by>
+        <sys_updated_on>2025-03-21 12:42:53</sys_updated_on>
+        <ui_id>237834be-bb3b-43f5-8df4-706984851e5e</ui_id>
+        <values>H4sIAAAAAAAA/+1UTWvbQBD9K0ZnWejLsuNbwRh6aAJuyCUEsdod2QurlbpaOXGN/3tnVyvbSdrUFEMpVLcZzbx5b/Yxj3uPM2/upcDC6CbKaBIlSRyG8SyNiiwpopglBCDyfE+SCrBSAa0Vw3hLRGcS+31Io3AWp+mYZHE5TidpNCZpGY/jNIunLKPTlE2Dle0LGDRE6QqkPhwQhPG2EWT34LAwQzdcMAXSmz8++R4W41gNypvv3/zSuwZyQQoQ2LioaWdAR58XiHGppKF7NWh6q9HMwJg59JybJP4yfKLQ9+BFg2SA40oiWvC9ikhGdK123lyrDhMKCLuTYnes2HCpe6UVeWn5d8RPQ1NXAkqjbgvHMHcbGpZTcwp3jea17DOaFGLYXC26St72EsxuoSSd0Ge77VrEg8ZQNiR6huXXTf28GuYtubTqHFtRUyKOEdFa8aLT0JrnAAF2KRVpGi7XeaPqLbfNSKUK1gKDoBT1M85s+VoGhBreAS6IBEvML2z6gShuRHxBGGw+WPH5t87M7WU4wrnVbAXn9qGwtKWKN/oTAm/B0Tz4ztPF5CMD0JvTe59hnnxNK5mf3Preq4vzf3/m2nszd3Tbz72U86vmX2hwvn2Vc7adXM22s79kW8foH/Pt79waxh+eq7OXtgZtz5x6xTt6DxXiaBj1SP7F3AaAJQfB2p+QHSzpBuRbN+B4Ta/myygL7ff/qF7xqD79AAW984YqCAAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Employee Onboarding Request Flow">59b2fd2753d4221027b678e0a0490e98</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>Manjusha.Jadhav</sys_created_by>
+        <sys_created_on>2025-03-21 12:42:53</sys_created_on>
+        <sys_id>baa6352f53d4221027b678e0a0490e00</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="HR Onboarding &amp;amp; Offboarding">5f29c3f75323121027b678e0a0490ef4</sys_scope>
+        <sys_updated_by>Manjusha.Jadhav</sys_updated_by>
+        <sys_updated_on>2025-03-21 12:42:53</sys_updated_on>
+        <ui_id>0c108244-a62f-4541-a4f2-24627d6c74d7</ui_id>
+        <values>H4sIAAAAAAAA/9VYbW/iOBD+K1E+Uy4hQKDfVttFqnTbnrbdlU69ynJip1hn7KzttEur/vcdx0mgkAIF7rb70eN5eWbm8WTg5slnxD/1yTgYZ+PxYBQHQRQFwXAYpThMkmiYJkGC+37HF3hGQdPghFM43mNe2LOea1RoqkBEmM45nn+rbr46aTplnCgq/NOb246fYwV+DNycPq1cmXlOEccJ5WB8bcN4FzZmZ2eIL4zXIdsA9REJ51oqYrEEHZ/+MFQQCqEyzDXt+DMsCDZSzRuJophcCr4QTJkw4NG3yj80ewT3o8DqZRTSSqm7a46oqpATp1PJUnqZGyaFkzig7lLyYiYuXAK2tjTDBTd1bUECRUeE5hazBVEhyq6m8uFLHXDCRJledcllinlzwsYolhSGatsLyukMHKEZznMm7lCu5D0rjQHLrHvH4dDNuHyAoJrdiS5OLfAulAh3JyA/K8XfsGI2i8/gpmx/xjh0G7mia1mosir3KOWFLi8UFtr58p/LWqHvhUXpsq7yQ65EoKBTxXLzAQzuaZXKc6dm8WAjRcYLSqRSEGZj6hUqM3J+dXF5/enzX9d/r1O6RWM/en9cjr8r9lbjtoQqor+QVUQPj0b0fhD8IqobVbw/pm/jrkt4C4FDspEEZNFvLZVBrnJLDF5n7N4MnTDKyYsBvAO42vjSks1L5q/hrQia2Rgrk7j320/iA+mZEeTqwgRnovxggUMI8455O9hIjSRc4UHZ/qW5a2VYp+vsxZ6R3uP+U7bsa83fHUDWhleAyLt2KFuA1/O1dl9RNzoadaPe26gLxLl5atA3VWspcL3v2NbV+o9WH6/qA4mWDMLn24b6H/eLGb41Zs/GXHmb0Zse5zKz3M3ZKwQ78jb1Pz/ijg04BdMqHnKPFT0wckfNInqtRaR5wPzftvuKXc0bKtM7eDMLNy7vydJmxjI0gz6xHNZFRVOggkZYUZTJQhBULYoL2ti+ZUxpUymvz5Av1BRKeBKenGem1Cu1vUb7GJNlh+xqw/PMq9OrMGgP0vPK9LwmvbcV45V51D/irnfIPJpgxsvSw8KfL/WOKiXVKzNpS9c2tH/HgbUjqPCooA6faG18b51sW7D+Fr8eD506KcVJv4eHcRSGQRAGJA5GcRyOhkk2xHE/Wzw0hLRIYSyC5wyIAe5RTYS6q8H6aHGzce+/OGDm/jGpXOyKtzY+k+KfIgh6sfEsYOizVwPenlI1LxIpOcViQc/BLxsY7+VfkILZre/Ptg79V19uF/JFOwr2VbDvBT23pBjRoDcKSXoyisP4pJ+R4cmY4MEJHieDOCI07Wf7f59vfwL6AgMwARQAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=59b2fd2753d4221027b678e0a0490e98"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=59b2fd2753d4221027b678e0a0490e98"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=59b2fd2753d4221027b678e0a0490e98"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=59b2fd2753d4221027b678e0a0490e98"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_59b2fd2753d4221027b678e0a0490e98^sys_idNOT IN3aa6f12f53d4221027b678e0a0490ec3,f6a6f12f53d4221027b678e0a0490ec7,faa6f12f53d4221027b678e0a0490eca"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_59b2fd2753d4221027b678e0a0490e98</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Manjusha.Jadhav</sys_created_by>
+        <sys_created_on>2025-03-21 12:42:53</sys_created_on>
+        <sys_id>3aa6f12f53d4221027b678e0a0490ec3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="HR Onboarding &amp;amp; Offboarding" source="x_1583423_hr_hroo">5f29c3f75323121027b678e0a0490ef4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HR Onboarding &amp;amp; Offboarding">5f29c3f75323121027b678e0a0490ef4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Manjusha.Jadhav</sys_updated_by>
+        <sys_updated_on>2025-03-21 12:42:53</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_59b2fd2753d4221027b678e0a0490e98</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Manjusha.Jadhav</sys_created_by>
+        <sys_created_on>2025-03-21 12:42:53</sys_created_on>
+        <sys_id>f6a6f12f53d4221027b678e0a0490ec7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="HR Onboarding &amp;amp; Offboarding" source="x_1583423_hr_hroo">5f29c3f75323121027b678e0a0490ef4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HR Onboarding &amp;amp; Offboarding">5f29c3f75323121027b678e0a0490ef4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Manjusha.Jadhav</sys_updated_by>
+        <sys_updated_on>2025-03-21 12:42:53</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_59b2fd2753d4221027b678e0a0490e98</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Manjusha.Jadhav</sys_created_by>
+        <sys_created_on>2025-03-21 12:42:53</sys_created_on>
+        <sys_id>faa6f12f53d4221027b678e0a0490eca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="HR Onboarding &amp;amp; Offboarding" source="x_1583423_hr_hroo">5f29c3f75323121027b678e0a0490ef4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HR Onboarding &amp;amp; Offboarding">5f29c3f75323121027b678e0a0490ef4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Manjusha.Jadhav</sys_updated_by>
+        <sys_updated_on>2025-03-21 12:42:53</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_59b2fd2753d4221027b678e0a0490e98"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_59b2fd2753d4221027b678e0a0490e98"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_59b2fd2753d4221027b678e0a0490e98"/>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=59b2fd2753d4221027b678e0a0490e98"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=59b2fd2753d4221027b678e0a0490e98"/>
+</record_update>
