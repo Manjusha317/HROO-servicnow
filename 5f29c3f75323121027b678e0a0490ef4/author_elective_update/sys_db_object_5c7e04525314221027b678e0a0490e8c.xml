@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_object">
+    <sys_db_object action="DELETE">
+        <access>public</access>
+        <actions_access>false</actions_access>
+        <alter_access>false</alter_access>
+        <caller_access/>
+        <client_scripts_access>false</client_scripts_access>
+        <configuration_access>false</configuration_access>
+        <create_access>false</create_access>
+        <create_access_controls>true</create_access_controls>
+        <delete_access>false</delete_access>
+        <is_extendable>false</is_extendable>
+        <label>cmdb_ci_service_software</label>
+        <live_feed_enabled>false</live_feed_enabled>
+        <name>x_1583423_hr_hroo_cmdb_ci_service_software</name>
+        <number_ref/>
+        <provider_class/>
+        <read_access>true</read_access>
+        <scriptable_table>false</scriptable_table>
+        <super_class/>
+        <sys_class_name>sys_db_object</sys_class_name>
+        <sys_created_by>Manjusha.Jadhav</sys_created_by>
+        <sys_created_on>2025-03-17 07:55:07</sys_created_on>
+        <sys_id>5c7e04525314221027b678e0a0490e8c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>cmdb_ci_service_software</sys_name>
+        <sys_package display_value="HR Onboarding &amp;amp; Offboarding" source="x_1583423_hr_hroo">5f29c3f75323121027b678e0a0490ef4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HR Onboarding &amp;amp; Offboarding">5f29c3f75323121027b678e0a0490ef4</sys_scope>
+        <sys_update_name>sys_db_object_5c7e04525314221027b678e0a0490e8c</sys_update_name>
+        <sys_updated_by>Manjusha.Jadhav</sys_updated_by>
+        <sys_updated_on>2025-03-17 07:55:07</sys_updated_on>
+        <update_access>false</update_access>
+        <user_role display_value="x_1583423_hr_hroo.employee_onboarding_user" name="x_1583423_hr_hroo.employee_onboarding_user">d0d9c33f5323121027b678e0a0490ee2</user_role>
+        <ws_access>true</ws_access>
+    </sys_db_object>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="HR Onboarding &amp;amp; Offboarding">5f29c3f75323121027b678e0a0490ef4</application>
+        <file_path/>
+        <instance_id>5b9be94adb66359c02d91729139619cc</instance_id>
+        <instance_name>dev215488</instance_name>
+        <name>sys_db_object_5c7e04525314221027b678e0a0490e8c</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_object"><sys_db_object action="INSERT_OR_UPDATE"><access>public</access><actions_access>false</actions_access><alter_access>false</alter_access><caller_access/><client_scripts_access>false</client_scripts_access><configuration_access>false</configuration_access><create_access>false</create_access><create_access_controls>true</create_access_controls><delete_access>false</delete_access><is_extendable>false</is_extendable><label>cmdb_ci_service_software</label><live_feed_enabled>false</live_feed_enabled><name>x_1583423_hr_hroo_cmdb_ci_service_software</name><number_ref/><provider_class/><read_access>true</read_access><scriptable_table>false</scriptable_table><super_class/><sys_class_name>sys_db_object</sys_class_name><sys_created_by>Manjusha.Jadhav</sys_created_by><sys_created_on>2025-03-17 07:55:07</sys_created_on><sys_id>5c7e04525314221027b678e0a0490e8c</sys_id><sys_mod_count>0</sys_mod_count><sys_name>cmdb_ci_service_software</sys_name><sys_package display_value="HR Onboarding &amp;amp; Offboarding" source="x_1583423_hr_hroo">5f29c3f75323121027b678e0a0490ef4</sys_package><sys_policy/><sys_scope display_value="HR Onboarding &amp;amp; Offboarding">5f29c3f75323121027b678e0a0490ef4</sys_scope><sys_update_name>sys_db_object_5c7e04525314221027b678e0a0490e8c</sys_update_name><sys_updated_by>Manjusha.Jadhav</sys_updated_by><sys_updated_on>2025-03-17 07:55:07</sys_updated_on><update_access>false</update_access><user_role display_value="x_1583423_hr_hroo.employee_onboarding_user" name="x_1583423_hr_hroo.employee_onboarding_user">d0d9c33f5323121027b678e0a0490ee2</user_role><ws_access>true</ws_access></sys_db_object></record_update>]]></payload>
+        <payload_hash>1925309922</payload_hash>
+        <record_name>cmdb_ci_service_software</record_name>
+        <reverted_from/>
+        <source>db29c33f5323121027b678e0a0490ed8</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Manjusha.Jadhav</sys_created_by>
+        <sys_created_on>2025-03-17 07:55:08</sys_created_on>
+        <sys_id>7c7ec4d25314221027b678e0a0490e03</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>195a31972fa0000001</sys_recorded_at>
+        <sys_updated_by>Manjusha.Jadhav</sys_updated_by>
+        <sys_updated_on>2025-03-17 07:55:08</sys_updated_on>
+        <type>Table</type>
+        <update_guid>707ec4d2fb142210f02af284606fd103</update_guid>
+        <update_guid_history>707ec4d2fb142210f02af284606fd103:1925309922</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Manjusha.Jadhav</sys_created_by>
+        <sys_created_on>2025-03-17 07:57:04</sys_created_on>
+        <sys_db_object display_value="" name="sys_db_object">sys_db_object</sys_db_object>
+        <sys_id>df14ca32c0604e36a9e62996e882fbc4</sys_id>
+        <sys_metadata>5c7e04525314221027b678e0a0490e8c</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>cmdb_ci_service_software</sys_name>
+        <sys_package display_value="HR Onboarding &amp;amp; Offboarding" source="x_1583423_hr_hroo">5f29c3f75323121027b678e0a0490ef4</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="HR Onboarding &amp;amp; Offboarding">5f29c3f75323121027b678e0a0490ef4</sys_scope>
+        <sys_scope_delete display_value="">426438089e2a41478a3875bc719e2ce1</sys_scope_delete>
+        <sys_update_name>sys_db_object_5c7e04525314221027b678e0a0490e8c</sys_update_name>
+        <sys_update_version display_value="sys_db_object_5c7e04525314221027b678e0a0490e8c">7c7ec4d25314221027b678e0a0490e03</sys_update_version>
+        <sys_updated_by>Manjusha.Jadhav</sys_updated_by>
+        <sys_updated_on>2025-03-17 07:57:04</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

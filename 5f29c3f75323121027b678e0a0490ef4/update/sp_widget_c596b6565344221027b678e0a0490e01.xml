@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function() {  /* widget controller */  var c = this;};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.stats-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+.stat-card {
+    background: #007bff;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>hr_key_stats</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>HR Key Stats</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+    data.stats = {
+        totalOnboarding: 50,
+        pendingOnboarding: 10,
+        completedOnboarding: 40,
+        totalOffboarding: 30,
+        pendingOffboarding: 5,
+        completedOffboarding: 25
+    };
+})();
+]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>Manjusha.Jadhav</sys_created_by>
+        <sys_created_on>2025-03-05 09:54:01</sys_created_on>
+        <sys_id>c596b6565344221027b678e0a0490e01</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>HR Key Stats</sys_name>
+        <sys_package display_value="HR Onboarding &amp;amp; Offboarding" source="x_1583423_hr_hroo">5f29c3f75323121027b678e0a0490ef4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HR Onboarding &amp;amp; Offboarding">5f29c3f75323121027b678e0a0490ef4</sys_scope>
+        <sys_update_name>sp_widget_c596b6565344221027b678e0a0490e01</sys_update_name>
+        <sys_updated_by>Manjusha.Jadhav</sys_updated_by>
+        <sys_updated_on>2025-03-05 09:54:51</sys_updated_on>
+        <template><![CDATA[<div class="stats-container">
+    <div class="stat-card" ng-repeat="(key, value) in c.data.stats">
+        <h3>{{ key.replace(/([A-Z])/g, ' $1') }}</h3>
+        <p>{{ value }}</p>
+    </div>
+</div>
+]]></template>
+    </sp_widget>
+</record_update>

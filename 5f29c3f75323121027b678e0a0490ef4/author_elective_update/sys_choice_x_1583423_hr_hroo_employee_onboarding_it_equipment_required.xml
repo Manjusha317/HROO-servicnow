@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="it_equipment_required" table="x_1583423_hr_hroo_employee_onboarding" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>it_equipment_required</element>
+            <name>x_1583423_hr_hroo_employee_onboarding</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>Manjusha.Jadhav</sys_created_by>
+            <sys_created_on>2025-03-17 07:48:53</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>it_equipment_required</sys_name>
+            <sys_package display_value="HR Onboarding &amp;amp; Offboarding" source="x_1583423_hr_hroo">5f29c3f75323121027b678e0a0490ef4</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="HR Onboarding &amp;amp; Offboarding">5f29c3f75323121027b678e0a0490ef4</sys_scope>
+            <sys_update_name>sys_choice_x_1583423_hr_hroo_employee_onboarding_it_equipment_required</sys_update_name>
+            <sys_updated_by>Manjusha.Jadhav</sys_updated_by>
+            <sys_updated_on>2025-03-17 07:48:53</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

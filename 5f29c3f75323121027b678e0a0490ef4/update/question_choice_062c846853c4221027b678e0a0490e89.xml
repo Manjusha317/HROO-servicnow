@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice">
+    <question_choice action="INSERT_OR_UPDATE">
+        <inactive>false</inactive>
+        <order>100</order>
+        <published_ref/>
+        <question display_value="Work Location">d3fb806853c4221027b678e0a0490e81</question>
+        <sys_class_name>question_choice</sys_class_name>
+        <sys_created_by>Manjusha.Jadhav</sys_created_by>
+        <sys_created_on>2025-02-27 11:00:24</sys_created_on>
+        <sys_id>062c846853c4221027b678e0a0490e89</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>office</sys_name>
+        <sys_package display_value="HR Onboarding &amp;amp; Offboarding" source="x_1583423_hr_hroo">5f29c3f75323121027b678e0a0490ef4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HR Onboarding &amp;amp; Offboarding">5f29c3f75323121027b678e0a0490ef4</sys_scope>
+        <sys_update_name>question_choice_062c846853c4221027b678e0a0490e89</sys_update_name>
+        <sys_updated_by>Manjusha.Jadhav</sys_updated_by>
+        <sys_updated_on>2025-02-27 11:00:24</sys_updated_on>
+        <text>office</text>
+        <value>office</value>
+    </question_choice>
+    <fx_price action="delete_multiple" query="id=062c846853c4221027b678e0a0490e89"/>
+</record_update>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_app_route">
+    <sys_ux_app_route action="DELETE">
+        <app_config display_value="HR Workspace">a47b1c075340221027b678e0a0490e57</app_config>
+        <description/>
+        <extension_point/>
+        <fields/>
+        <icon/>
+        <name>demo</name>
+        <optional_parameters/>
+        <order>0</order>
+        <parent_macroponent display_value="Workspace App Shell">c276387cc331101080d6d3658940ddd2</parent_macroponent>
+        <parent_macroponent_composition_element_id/>
+        <route_type>demo</route_type>
+        <screen_type display_value="demo">28866dd05354221027b678e0a0490e7b</screen_type>
+        <sys_class_name>sys_ux_app_route</sys_class_name>
+        <sys_created_by>Manjusha.Jadhav</sys_created_by>
+        <sys_created_on>2025-03-11 09:12:02</sys_created_on>
+        <sys_id>e4866dd05354221027b678e0a0490e7f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>demo</sys_name>
+        <sys_package display_value="HR Onboarding &amp;amp; Offboarding" source="x_1583423_hr_hroo">5f29c3f75323121027b678e0a0490ef4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HR Onboarding &amp;amp; Offboarding">5f29c3f75323121027b678e0a0490ef4</sys_scope>
+        <sys_update_name>sys_ux_app_route_e4866dd05354221027b678e0a0490e7f</sys_update_name>
+        <sys_updated_by>Manjusha.Jadhav</sys_updated_by>
+        <sys_updated_on>2025-03-11 09:12:02</sys_updated_on>
+    </sys_ux_app_route>
+    <sys_translated_text action="DELETE" query="documentkey=e4866dd05354221027b678e0a0490e7f"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="HR Onboarding &amp;amp; Offboarding">5f29c3f75323121027b678e0a0490ef4</application>
+        <file_path/>
+        <instance_id>5b9be94adb66359c02d91729139619cc</instance_id>
+        <instance_name>dev215488</instance_name>
+        <name>sys_ux_app_route_e4866dd05354221027b678e0a0490e7f</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_app_route"><sys_ux_app_route action="INSERT_OR_UPDATE"><app_config display_value="HR Workspace">a47b1c075340221027b678e0a0490e57</app_config><description/><extension_point/><fields/><icon/><name>demo</name><optional_parameters/><order>0</order><parent_macroponent display_value="Workspace App Shell">c276387cc331101080d6d3658940ddd2</parent_macroponent><parent_macroponent_composition_element_id/><route_type>demo</route_type><screen_type display_value="demo">28866dd05354221027b678e0a0490e7b</screen_type><sys_class_name>sys_ux_app_route</sys_class_name><sys_created_by>Manjusha.Jadhav</sys_created_by><sys_created_on>2025-03-11 09:12:02</sys_created_on><sys_id>e4866dd05354221027b678e0a0490e7f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>demo</sys_name><sys_package display_value="HR Onboarding &amp;amp; Offboarding" source="x_1583423_hr_hroo">5f29c3f75323121027b678e0a0490ef4</sys_package><sys_policy/><sys_scope display_value="HR Onboarding &amp;amp; Offboarding">5f29c3f75323121027b678e0a0490ef4</sys_scope><sys_update_name>sys_ux_app_route_e4866dd05354221027b678e0a0490e7f</sys_update_name><sys_updated_by>Manjusha.Jadhav</sys_updated_by><sys_updated_on>2025-03-11 09:12:02</sys_updated_on></sys_ux_app_route><sys_translated_text action="delete_multiple" query="documentkey=e4866dd05354221027b678e0a0490e7f"/></record_update>]]></payload>
+        <payload_hash>74611984</payload_hash>
+        <record_name>demo</record_name>
+        <reverted_from/>
+        <source>db29c33f5323121027b678e0a0490ed8</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Manjusha.Jadhav</sys_created_by>
+        <sys_created_on>2025-03-11 09:12:02</sys_created_on>
+        <sys_id>a486e5145354221027b678e0a0490e08</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1958479af770000001</sys_recorded_at>
+        <sys_updated_by>Manjusha.Jadhav</sys_updated_by>
+        <sys_updated_on>2025-03-11 09:12:02</sys_updated_on>
+        <type>UX App Route</type>
+        <update_guid>6886e514a5542210deb4bc6085cd1507</update_guid>
+        <update_guid_history>6886e514a5542210deb4bc6085cd1507:74611984</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Manjusha.Jadhav</sys_created_by>
+        <sys_created_on>2025-03-11 09:13:13</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_app_route">sys_ux_app_route</sys_db_object>
+        <sys_id>319292a142da42d58e06613d79d76771</sys_id>
+        <sys_metadata>e4866dd05354221027b678e0a0490e7f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>demo</sys_name>
+        <sys_package display_value="HR Onboarding &amp;amp; Offboarding" source="x_1583423_hr_hroo">5f29c3f75323121027b678e0a0490ef4</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="HR Onboarding &amp;amp; Offboarding">5f29c3f75323121027b678e0a0490ef4</sys_scope>
+        <sys_scope_delete display_value="">426438089e2a41478a3875bc719e2ce1</sys_scope_delete>
+        <sys_update_name>sys_ux_app_route_e4866dd05354221027b678e0a0490e7f</sys_update_name>
+        <sys_update_version display_value="sys_ux_app_route_e4866dd05354221027b678e0a0490e7f">a486e5145354221027b678e0a0490e08</sys_update_version>
+        <sys_updated_by>Manjusha.Jadhav</sys_updated_by>
+        <sys_updated_on>2025-03-11 09:13:13</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller = function($scope, $window, spUtil) {
+    $scope.submitRequest = function() {
+        $scope.server.get({action: "submit"}).then(function(response) {
+            if (response.success) {
+                spUtil.addInfoMessage("Request submitted successfully!");
+                $window.location.href = 'hr_dashboard_hub'; // Change to your actual dashboard page ID
+            } else {
+                spUtil.addErrorMessage("Error submitting request.");
+            }
+        });
+    };
+};
+]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.quick-actions {
+  background-color: white;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.quick-actions h2 {
+  color: #004080;
+  margin-bottom: 15px;
+}
+
+.actions-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.btn-action {
+  background-color: #ffcc00;
+  color: #004080;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn-action:hover {
+  background-color: #e6b800;
+}
+</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>hr_quick_actions</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>HR Quick Actions</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  data.approvals = [];
+  
+  // Check if user is a manager (can approve)
+  var userID = gs.getUserID();
+  var gr = new GlideRecord("sysapproval_approver"); // Correct table
+  
+  gr.addQuery("approver", userID); // Get approvals assigned to the logged-in user
+  gr.addQuery("state", "requested"); // Only fetch pending approvals
+  gr.orderByDesc("sys_created_on");
+  gr.query();
+  
+  while (gr.next()) {
+    var approval = {
+      task: gr.sysapproval.getDisplayValue(), // Task name
+      type: gr.sysapproval.sys_class_name.toString(), // Type of approval
+      state: gr.state.getDisplayValue(), // Approval state
+      requested_for: gr.sysapproval.requested_for.getDisplayValue(), // Requested for user
+      sys_id: gr.sys_id.toString() // Approval ID for reference
+    };
+    data.approvals.push(approval);
+  }
+})();
+]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>Manjusha.Jadhav</sys_created_by>
+        <sys_created_on>2025-03-04 12:42:21</sys_created_on>
+        <sys_id>8583da865380a21027b678e0a0490e43</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>HR Quick Actions</sys_name>
+        <sys_package display_value="HR Onboarding &amp;amp; Offboarding" source="x_1583423_hr_hroo">5f29c3f75323121027b678e0a0490ef4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HR Onboarding &amp;amp; Offboarding">5f29c3f75323121027b678e0a0490ef4</sys_scope>
+        <sys_update_name>sp_widget_8583da865380a21027b678e0a0490e43</sys_update_name>
+        <sys_updated_by>Manjusha.Jadhav</sys_updated_by>
+        <sys_updated_on>2025-03-10 12:06:23</sys_updated_on>
+        <template><![CDATA[<div class="quick-actions">
+  <h2>Quick Actions</h2>
+  <div class="actions-container">
+    <button class="btn btn-primary" ng-click="submitRequest()">Submit Request</button>
+    <a href="#!/onboarding_requests" class="btn btn-action">New Onboarding Request</a>
+    <a href="#!/offboarding_requests" class="btn btn-action">New Offboarding Request</a>
+    <a href="#!/my_requests" class="btn btn-action">My Requests</a>
+    <a href="#!/approvals" class="btn btn-action">Approvals</a>
+  </div>
+</div>]]></template>
+    </sp_widget>
+</record_update>

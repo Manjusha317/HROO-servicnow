@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="DELETE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function toggleMenu() {
+    var navLinks = document.querySelector(".nav-links");
+    if (navLinks.classList.contains("show")) {
+        navLinks.classList.remove("show");
+    } else {
+        navLinks.classList.add("show");
+    }
+}
+
+function logout() {
+    // Display confirmation before logging out
+    var confirmLogout = confirm("Are you sure you want to log out?");
+    if (confirmLogout) {
+        // Redirect to ServiceNow logout URL (adjust based on your instance)
+        window.location.href = "/logout.do";
+    }
+}
+]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0077cc;
+    padding: 15px 20px;
+    color: white;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background: #0077cc;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>hr_header_navigation</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>HR Header Navigation</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {  /* populate the 'data' object */  /* e.g., data.table = $sp.getValue('table'); */})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>Manjusha.Jadhav</sys_created_by>
+        <sys_created_on>2025-03-04 11:29:34</sys_created_on>
+        <sys_id>3ed28ac25340a21027b678e0a0490ee1</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>HR Header Navigation</sys_name>
+        <sys_package display_value="HR Onboarding &amp;amp; Offboarding" source="x_1583423_hr_hroo">5f29c3f75323121027b678e0a0490ef4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HR Onboarding &amp;amp; Offboarding">5f29c3f75323121027b678e0a0490ef4</sys_scope>
+        <sys_update_name>sp_widget_3ed28ac25340a21027b678e0a0490ee1</sys_update_name>
+        <sys_updated_by>Manjusha.Jadhav</sys_updated_by>
+        <sys_updated_on>2025-03-04 11:37:07</sys_updated_on>
+        <template><![CDATA[<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">HR Onboarding & Offboarding</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Onboarding Requests</a></li>
+            <li><a href="#">Offboarding Requests</a></li>
+            <li><a href="#">Approvals</a></li>
+            <li><a href="#">Dashboard</a></li>
+        </ul>
+        <div class="user-profile">
+            <span class="user-icon">]]>👤<![CDATA[</span>
+            <button class="logout-btn" onclick="logout()">Logout</button>
+        </div>
+        <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+    </nav>
+
+    <script src="script.js"></script>
+</body>
+</html>
+]]></template>
+    </sp_widget>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="HR Onboarding &amp;amp; Offboarding">5f29c3f75323121027b678e0a0490ef4</application>
+        <file_path/>
+        <instance_id>5b9be94adb66359c02d91729139619cc</instance_id>
+        <instance_name>dev215488</instance_name>
+        <name>sp_widget_3ed28ac25340a21027b678e0a0490ee1</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[api.controller=function toggleMenu() {
+    var navLinks = document.querySelector(".nav-links");
+    if (navLinks.classList.contains("show")) {
+        navLinks.classList.remove("show");
+    } else {
+        navLinks.classList.add("show");
+    }
+}
+
+function logout() {
+    // Display confirmation before logging out
+    var confirmLogout = confirm("Are you sure you want to log out?");
+    if (confirmLogout) {
+        // Redirect to ServiceNow logout URL (adjust based on your instance)
+        window.location.href = "/logout.do";
+    }
+}
+]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0077cc;
+    padding: 15px 20px;
+    color: white;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background: #0077cc;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;hr_header_navigation&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link&gt;&lt;![CDATA[function link(scope, element, attrs, controller) {  }]]&gt;&lt;/link&gt;&lt;name&gt;HR Header Navigation&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {  /* populate the 'data' object */  /* e.g., data.table = $sp.getValue('table'); */})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Manjusha.Jadhav&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-03-04 11:29:34&lt;/sys_created_on&gt;&lt;sys_id&gt;3ed28ac25340a21027b678e0a0490ee1&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_name&gt;HR Header Navigation&lt;/sys_name&gt;&lt;sys_package display_value="HR Onboarding &amp;amp;amp; Offboarding" source="x_1583423_hr_hroo"&gt;5f29c3f75323121027b678e0a0490ef4&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="HR Onboarding &amp;amp;amp; Offboarding"&gt;5f29c3f75323121027b678e0a0490ef4&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_3ed28ac25340a21027b678e0a0490ee1&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;Manjusha.Jadhav&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-03-04 11:37:07&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;link rel="stylesheet" type="text/css" href="styles.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;nav class="navbar"&gt;
+        &lt;div class="logo"&gt;HR Onboarding &amp; Offboarding&lt;/div&gt;
+        &lt;ul class="nav-links"&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Onboarding Requests&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Offboarding Requests&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Approvals&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Dashboard&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;div class="user-profile"&gt;
+            &lt;span class="user-icon"&gt;]]&gt;👤&lt;![CDATA[&lt;/span&gt;
+            &lt;button class="logout-btn" onclick="logout()"&gt;Logout&lt;/button&gt;
+        &lt;/div&gt;
+        &lt;div class="menu-toggle" onclick="toggleMenu()"&gt;&amp;#9776;&lt;/div&gt;
+    &lt;/nav&gt;
+
+    &lt;script src="script.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-25369731</payload_hash>
+        <record_name>HR Header Navigation</record_name>
+        <reverted_from/>
+        <source>db29c33f5323121027b678e0a0490ed8</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Manjusha.Jadhav</sys_created_by>
+        <sys_created_on>2025-03-04 11:37:07</sys_created_on>
+        <sys_id>ed940e825340a21027b678e0a0490eb5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19560f202190000001</sys_recorded_at>
+        <sys_updated_by>Manjusha.Jadhav</sys_updated_by>
+        <sys_updated_on>2025-03-04 11:37:07</sys_updated_on>
+        <type>Widget</type>
+        <update_guid>a5940e82a440a2108bba052cd2edb8b5</update_guid>
+        <update_guid_history>a5940e82a440a2108bba052cd2edb8b5:-25369731,f4144a06e940a2106059ce5c5432768c:1564749615,e48382c29140a2105855f7952ded86ef:1990605607,f6d28ac22d40a210747125eb78721ee4:-1281202892</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="HR Header Navigation">ab268e865340a21027b678e0a0490ec7</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Manjusha.Jadhav</sys_created_by>
+        <sys_created_on>2025-03-04 11:44:05</sys_created_on>
+        <sys_db_object display_value="" name="sp_widget">sp_widget</sys_db_object>
+        <sys_id>0d0225763ab54bc6819183ec901d6284</sys_id>
+        <sys_metadata>3ed28ac25340a21027b678e0a0490ee1</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>HR Header Navigation</sys_name>
+        <sys_package display_value="HR Onboarding &amp;amp; Offboarding" source="x_1583423_hr_hroo">5f29c3f75323121027b678e0a0490ef4</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="HR Onboarding &amp;amp; Offboarding">5f29c3f75323121027b678e0a0490ef4</sys_scope>
+        <sys_scope_delete display_value="">426438089e2a41478a3875bc719e2ce1</sys_scope_delete>
+        <sys_update_name>sp_widget_3ed28ac25340a21027b678e0a0490ee1</sys_update_name>
+        <sys_update_version display_value="sp_widget_3ed28ac25340a21027b678e0a0490ee1">ed940e825340a21027b678e0a0490eb5</sys_update_version>
+        <sys_updated_by>Manjusha.Jadhav</sys_updated_by>
+        <sys_updated_on>2025-03-04 11:44:05</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

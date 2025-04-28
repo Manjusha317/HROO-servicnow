@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=(function() {
+    $scope.visibleCount = 20; 
+
+    // Wait for data to load
+    $timeout(function() {
+        console.log("Employee Data Loaded:", $scope.data.employees);
+
+        if (!$scope.data.employees || $scope.data.employees.length === 0) {
+            console.error("No employees found. Check the server script.");
+        }
+    }, 1000);
+
+    $scope.getFilteredEmployees = function() {
+        var searchText = ($scope.searchText || "").toLowerCase();
+        console.log("Search Text:", searchText);
+
+        if (!$scope.data.employees) {
+            console.error("Employee data is missing in Client Script!");
+            return [];
+        }
+
+        var filteredList = $scope.data.employees.filter(function(emp) {
+            return (emp.employee_name && emp.employee_name.toLowerCase().includes(searchText)) ||
+                   (emp.department && emp.department.toLowerCase().includes(searchText)) ||
+                   (emp.manager && emp.manager.toLowerCase().includes(searchText));
+        });
+
+        console.log("Filtered Employees:", filteredList);
+        return filteredList.slice(0, $scope.visibleCount);
+    };
+
+    $scope.loadMore = function() {
+        if ($scope.visibleCount < $scope.data.employees.length) {
+            $scope.visibleCount += 20;
+            console.log("Increased visible count:", $scope.visibleCount);
+        }
+    };
+})();
+]]></client_script>
+        <controller_as>c</controller_as>
+        <css>/* Container Styling */
+.employee-directory {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Search Bar */
+.search-bar {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Employee Table */
+.employee-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.employee-table th, .employee-table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+.employee-table th {
+    background: #007bff;
+    color: white;
+    font-weight: bold;
+}
+
+.employee-table tr:hover {
+    background: #f1f1f1;
+}
+
+/* Load More Button */
+.load-more {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.load-more:hover {
+    background: #0056b3;
+}
+</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>hr_employee_directory</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>HR Employee Directory</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+    var employees = [];
+    var gr = new GlideRecord('sys_user'); // Change to your correct table
+    gr.addQuery('active', true);
+    gr.query();
+    
+    while (gr.next()) {
+        employees.push({
+            employee_name: gr.getValue('employee_name') || "Unknown",
+            department: gr.getDisplayValue('department') || "N/A",
+            manager: gr.getDisplayValue('manager') || "N/A",
+            start_date: gr.getValue('start_date') || "N/A"
+        });
+    }
+
+    data.employees = employees;
+
+    // Debugging Log for the Server-Side
+    gs.info("Employee Data Sent: " + JSON.stringify(data.employees)); 
+})();
+]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>Manjusha.Jadhav</sys_created_by>
+        <sys_created_on>2025-03-05 06:40:40</sys_created_on>
+        <sys_id>f05ac2de5340221027b678e0a0490e26</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_name>HR Employee Directory</sys_name>
+        <sys_package display_value="HR Onboarding &amp;amp; Offboarding" source="x_1583423_hr_hroo">5f29c3f75323121027b678e0a0490ef4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HR Onboarding &amp;amp; Offboarding">5f29c3f75323121027b678e0a0490ef4</sys_scope>
+        <sys_update_name>sp_widget_f05ac2de5340221027b678e0a0490e26</sys_update_name>
+        <sys_updated_by>Manjusha.Jadhav</sys_updated_by>
+        <sys_updated_on>2025-03-05 07:26:14</sys_updated_on>
+        <template><![CDATA[<div>
+    <input type="text" ng-model="searchText" placeholder="Search Employee..." />
+    <button ng-click="getFilteredEmployees()">Search</button>
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Department</th>
+            <th>Manager</th>
+            <th>Start Date</th>
+        </tr>
+        <tr ng-repeat="emp in getFilteredEmployees()">
+            <td>{{ emp.name }}</td>
+            <td>{{ emp.department }}</td>
+            <td>{{ emp.manager }}</td>
+            <td>{{ emp.start_date }}</td>
+        </tr>
+    </table>
+
+    <button ng-click="loadMore()" ng-if="visibleCount < data.employees.length">Load More</button>
+</div>
+]]></template>
+    </sp_widget>
+</record_update>

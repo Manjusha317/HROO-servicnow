@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[(function() {
+    api.controller = function($scope, $http) {
+        $scope.approvals = [];
+
+        function loadApprovals() {
+            var request = {
+                method: 'GET',
+                url: '/api/now/table/sysapproval_approver', // Corrected table
+                params: {
+                    sysparm_query: 'state=requested^approver=' + $scope.user.sys_id,
+                    sysparm_fields: 'sys_id,sysapproval.short_description,state,sys_updated_on',
+                    sysparm_limit: 10
+                }
+            };
+
+            $http(request).then(function(response) {
+                $scope.approvals = response.data.result;
+            }, function(error) {
+                console.error("Error fetching approvals", error);
+            });
+        }
+
+        $scope.processApproval = function(sys_id, action) {
+            var request = {
+                method: 'POST',
+                url: '/api/now/ui/widget/your_widget_id',
+                data: {
+                    action: action,
+                    sys_id: sys_id
+                }
+            };
+
+            $http(request).then(function(response) {
+                alert(response.data.result.message);
+                loadApprovals();
+            }, function(error) {
+                console.error("Error processing approval", error);
+            });
+        };
+
+        loadApprovals();
+    };
+})();
+]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.hr-approval-status {
+    padding: 15px;
+}
+
+.hr-approval-status ul {
+    list-style: none;
+    padding: 0;
+}
+
+.hr-approval-status li {
+    background: #f8f9fa;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+.badge {
+    background: #ffc107;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.btn-sm {
+    float: right;
+}
+</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>hr_approval_status</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>HR Approval Status</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+    data.approvals = [];
+    
+    var gr = new GlideRecord('sysapproval_approver'); // Corrected table name
+    gr.addQuery('state', 'requested');
+    gr.addQuery('approver', gs.getUserID());
+    gr.query();
+    
+    while (gr.next()) {
+        data.approvals.push({
+            sys_id: gr.getValue('sys_id'),
+            short_description: gr.getValue('sysapproval.short_description'), // Get from parent
+            state: gr.getValue('state'),
+            updated_on: gr.getValue('sys_updated_on')
+        });
+    }
+    
+    // Handle Approval Action
+    if (input && input.action && input.sys_id) {
+        var actionGr = new GlideRecord('sysapproval_approver'); // Use correct table
+        if (actionGr.get(input.sys_id)) {
+            actionGr.state = input.action === 'approve' ? 'approved' : 'rejected';
+            actionGr.update();
+            data.message = "Approval " + input.action + "d successfully.";
+        }
+    }
+})();
+]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>Manjusha.Jadhav</sys_created_by>
+        <sys_created_on>2025-03-05 05:50:29</sys_created_on>
+        <sys_id>a9de7d125340221027b678e0a0490e87</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>HR Approval Status</sys_name>
+        <sys_package display_value="HR Onboarding &amp;amp; Offboarding" source="x_1583423_hr_hroo">5f29c3f75323121027b678e0a0490ef4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HR Onboarding &amp;amp; Offboarding">5f29c3f75323121027b678e0a0490ef4</sys_scope>
+        <sys_update_name>sp_widget_a9de7d125340221027b678e0a0490e87</sys_update_name>
+        <sys_updated_by>Manjusha.Jadhav</sys_updated_by>
+        <sys_updated_on>2025-03-13 07:35:44</sys_updated_on>
+        <template><![CDATA[<div class="card p-3">
+    <h3>Manager Approvals</h3>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Description</th>
+                <th>Status</th>
+                <th>Last Updated</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="approval in approvals">
+                <td>{{approval.short_description}}</td>
+                <td>{{approval.state}}</td>
+                <td>{{approval.updated_on}}</td>
+                <td>
+                    <button class="btn btn-success btn-sm" ng-click="processApproval(approval.sys_id, 'approve')">Approve</button>
+                    <button class="btn btn-danger btn-sm" ng-click="processApproval(approval.sys_id, 'reject')">Reject</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+]]></template>
+    </sp_widget>
+</record_update>

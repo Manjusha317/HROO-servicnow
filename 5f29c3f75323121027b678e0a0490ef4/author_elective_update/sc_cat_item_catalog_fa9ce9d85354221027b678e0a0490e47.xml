@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog">
+    <sc_cat_item_catalog action="DELETE">
+        <sc_cat_item display_value="Copy of Order Guide HROO">6e9ce9d85354221027b678e0a0490e3f</sc_cat_item>
+        <sc_catalog display_value="HR Employee Services">2880544e5363121027b678e0a0490e3e</sc_catalog>
+        <sys_class_name>sc_cat_item_catalog</sys_class_name>
+        <sys_created_by>Manjusha.Jadhav</sys_created_by>
+        <sys_created_on>2025-03-11 09:38:40</sys_created_on>
+        <sys_id>fa9ce9d85354221027b678e0a0490e47</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>HR Employee Services.Copy of Order Guide HROO</sys_name>
+        <sys_package display_value="HR Onboarding &amp;amp; Offboarding" source="x_1583423_hr_hroo">5f29c3f75323121027b678e0a0490ef4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HR Onboarding &amp;amp; Offboarding">5f29c3f75323121027b678e0a0490ef4</sys_scope>
+        <sys_update_name>sc_cat_item_catalog_fa9ce9d85354221027b678e0a0490e47</sys_update_name>
+        <sys_updated_by>Manjusha.Jadhav</sys_updated_by>
+        <sys_updated_on>2025-03-11 09:38:40</sys_updated_on>
+    </sc_cat_item_catalog>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="HR Onboarding &amp;amp; Offboarding">5f29c3f75323121027b678e0a0490ef4</application>
+        <file_path/>
+        <instance_id>5b9be94adb66359c02d91729139619cc</instance_id>
+        <instance_name>dev215488</instance_name>
+        <name>sc_cat_item_catalog_fa9ce9d85354221027b678e0a0490e47</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog"><sc_cat_item_catalog action="INSERT_OR_UPDATE"><sc_cat_item display_value="Copy of Order Guide HROO">6e9ce9d85354221027b678e0a0490e3f</sc_cat_item><sc_catalog display_value="HR Employee Services">2880544e5363121027b678e0a0490e3e</sc_catalog><sys_class_name>sc_cat_item_catalog</sys_class_name><sys_created_by>Manjusha.Jadhav</sys_created_by><sys_created_on>2025-03-11 09:38:40</sys_created_on><sys_id>fa9ce9d85354221027b678e0a0490e47</sys_id><sys_mod_count>0</sys_mod_count><sys_name>HR Employee Services.Copy of Order Guide HROO</sys_name><sys_package display_value="HR Onboarding &amp;amp; Offboarding" source="x_1583423_hr_hroo">5f29c3f75323121027b678e0a0490ef4</sys_package><sys_policy/><sys_scope display_value="HR Onboarding &amp;amp; Offboarding">5f29c3f75323121027b678e0a0490ef4</sys_scope><sys_update_name>sc_cat_item_catalog_fa9ce9d85354221027b678e0a0490e47</sys_update_name><sys_updated_by>Manjusha.Jadhav</sys_updated_by><sys_updated_on>2025-03-11 09:38:40</sys_updated_on></sc_cat_item_catalog></record_update>]]></payload>
+        <payload_hash>648877842</payload_hash>
+        <record_name>HR Employee Services.Copy of Order Guide HROO</record_name>
+        <reverted_from/>
+        <source>db29c33f5323121027b678e0a0490ed8</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Manjusha.Jadhav</sys_created_by>
+        <sys_created_on>2025-03-11 09:38:40</sys_created_on>
+        <sys_id>fe9c2d1c5354221027b678e0a0490eee</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>195849212820000001</sys_recorded_at>
+        <sys_updated_by>Manjusha.Jadhav</sys_updated_by>
+        <sys_updated_on>2025-03-11 09:38:40</sys_updated_on>
+        <type>Catalog Items Catalog</type>
+        <update_guid>f29c2d1c73542210e2e9b45cb95ae5ee</update_guid>
+        <update_guid_history>f29c2d1c73542210e2e9b45cb95ae5ee:648877842</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="HR Employee Services.Copy of Order Guide HROO">a1ace91c5354221027b678e0a0490e5b</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Manjusha.Jadhav</sys_created_by>
+        <sys_created_on>2025-03-11 09:38:51</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_catalog">sc_cat_item_catalog</sys_db_object>
+        <sys_id>1c2318471aac4d619286ed9c0ae9c7a9</sys_id>
+        <sys_metadata>fa9ce9d85354221027b678e0a0490e47</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>HR Employee Services.Copy of Order Guide HROO</sys_name>
+        <sys_package display_value="HR Onboarding &amp;amp; Offboarding" source="x_1583423_hr_hroo">5f29c3f75323121027b678e0a0490ef4</sys_package>
+        <sys_parent display_value="">6e9ce9d85354221027b678e0a0490e3f</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="HR Onboarding &amp;amp; Offboarding">5f29c3f75323121027b678e0a0490ef4</sys_scope>
+        <sys_scope_delete display_value="">426438089e2a41478a3875bc719e2ce1</sys_scope_delete>
+        <sys_update_name>sc_cat_item_catalog_fa9ce9d85354221027b678e0a0490e47</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_catalog_fa9ce9d85354221027b678e0a0490e47">fe9c2d1c5354221027b678e0a0490eee</sys_update_version>
+        <sys_updated_by>Manjusha.Jadhav</sys_updated_by>
+        <sys_updated_on>2025-03-11 09:38:51</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

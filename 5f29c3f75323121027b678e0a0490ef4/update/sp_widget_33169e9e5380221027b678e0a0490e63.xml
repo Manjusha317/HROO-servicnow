@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller = function($scope, $timeout) {
+    var c = this;
+
+    // Load dashboard data from the server
+    $scope.dashboardStats = c.data.dashboardStats;
+
+    // Function to animate numbers
+    function animateNumber(id, targetValue) {
+        var current = 0;
+        var increment = Math.ceil(targetValue / 50);
+        var interval = setInterval(function() {
+            current += increment;
+            if (current >= targetValue) {
+                current = targetValue;
+                clearInterval(interval);
+            }
+            document.getElementById(id).innerText = current;
+        }, 20);
+    }
+
+    // Apply animation when data is loaded
+    $timeout(function() {
+        animateNumber("totalOnboarding", $scope.dashboardStats.totalOnboarding);
+        animateNumber("pendingOnboarding", $scope.dashboardStats.pendingOnboarding);
+        animateNumber("completedOnboarding", $scope.dashboardStats.completedOnboarding);
+        animateNumber("totalOffboarding", $scope.dashboardStats.totalOffboarding);
+        animateNumber("pendingOffboarding", $scope.dashboardStats.pendingOffboarding);
+        animateNumber("completedOffboarding", $scope.dashboardStats.completedOffboarding);
+    }, 500);
+};
+]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.dashboard-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 20px;
+}
+
+.dashboard-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+    min-width: 200px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-5px);
+}
+
+.dashboard-card i {
+    font-size: 30px;
+    color: #4a90e2;
+}
+
+.dashboard-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.dashboard-card p {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Color Themes */
+.onboarding { background: #e3f2fd; }
+.offboarding { background: #ffebee; }
+.pending { background: #fff3e0; }
+.completed { background: #e8f5e9; }
+</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>hr_dashboard_overview</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>HR Dashboard Overview</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+    var result = {};
+
+    // Fetch total onboarding requests
+    var onboardingGR = new GlideAggregate('x_1583423_hr_hroo_employee_onboarding'); // Update table name
+    onboardingGR.addAggregate('COUNT');
+    onboardingGR.query();
+    if (onboardingGR.next()) {
+        result.totalOnboarding = onboardingGR.getAggregate('COUNT');
+    }
+
+    // Fetch total offboarding requests
+    var offboardingGR = new GlideAggregate('x_1583423_hr_hroo_employee_offboarding'); // Update table name
+    offboardingGR.addAggregate('COUNT');
+    offboardingGR.query();
+    if (offboardingGR.next()) {
+        result.totalOffboarding = offboardingGR.getAggregate('COUNT');
+    }
+
+    // Fetch pending onboarding requests
+    var pendingOnboardingGR = new GlideAggregate('x_1583423_hr_hroo_employee_onboarding');
+    pendingOnboardingGR.addQuery('status', 'Pending'); // Adjust status field as per your table
+    pendingOnboardingGR.addAggregate('COUNT');
+    pendingOnboardingGR.query();
+    if (pendingOnboardingGR.next()) {
+        result.pendingOnboarding = pendingOnboardingGR.getAggregate('COUNT');
+    }
+
+    // Fetch completed onboarding requests
+    var completedOnboardingGR = new GlideAggregate('x_1583423_hr_hroo_employee_onboarding');
+    completedOnboardingGR.addQuery('status', 'Completed'); // Adjust status field as per your table
+    completedOnboardingGR.addAggregate('COUNT');
+    completedOnboardingGR.query();
+    if (completedOnboardingGR.next()) {
+        result.completedOnboarding = completedOnboardingGR.getAggregate('COUNT');
+    }
+
+    // Fetch pending offboarding requests
+    var pendingOffboardingGR = new GlideAggregate('x_1583423_hr_hroo_employee_offboarding');
+    pendingOffboardingGR.addQuery('status', 'Pending');
+    pendingOffboardingGR.addAggregate('COUNT');
+    pendingOffboardingGR.query();
+    if (pendingOffboardingGR.next()) {
+        result.pendingOffboarding = pendingOffboardingGR.getAggregate('COUNT');
+    }
+
+    // Fetch completed offboarding requests
+    var completedOffboardingGR = new GlideAggregate('x_1583423_hr_hroo_employee_offboarding');
+    completedOffboardingGR.addQuery('status', 'Completed');
+    completedOffboardingGR.addAggregate('COUNT');
+    completedOffboardingGR.query();
+    if (completedOffboardingGR.next()) {
+        result.completedOffboarding = completedOffboardingGR.getAggregate('COUNT');
+    }
+
+    // Send the data to the client script
+    data.dashboardStats = result;
+})();
+]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>Manjusha.Jadhav</sys_created_by>
+        <sys_created_on>2025-03-05 07:32:12</sys_created_on>
+        <sys_id>33169e9e5380221027b678e0a0490e63</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>HR Dashboard Overview</sys_name>
+        <sys_package display_value="HR Onboarding &amp;amp; Offboarding" source="x_1583423_hr_hroo">5f29c3f75323121027b678e0a0490ef4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HR Onboarding &amp;amp; Offboarding">5f29c3f75323121027b678e0a0490ef4</sys_scope>
+        <sys_update_name>sp_widget_33169e9e5380221027b678e0a0490e63</sys_update_name>
+        <sys_updated_by>Manjusha.Jadhav</sys_updated_by>
+        <sys_updated_on>2025-03-05 07:37:37</sys_updated_on>
+        <template><![CDATA[<div class="dashboard-container">
+    <!-- Onboarding Section -->
+    <div class="dashboard-card onboarding">
+        <i class="fa fa-user-plus"></i>
+        <h3>Total Onboarding</h3>
+        <p id="totalOnboarding">0</p>
+    </div>
+    <div class="dashboard-card pending">
+        <i class="fa fa-clock"></i>
+        <h3>Pending Onboarding</h3>
+        <p id="pendingOnboarding">0</p>
+    </div>
+    <div class="dashboard-card completed">
+        <i class="fa fa-check-circle"></i>
+        <h3>Completed Onboarding</h3>
+        <p id="completedOnboarding">0</p>
+    </div>
+
+    <!-- Offboarding Section -->
+    <div class="dashboard-card offboarding">
+        <i class="fa fa-user-times"></i>
+        <h3>Total Offboarding</h3>
+        <p id="totalOffboarding">0</p>
+    </div>
+    <div class="dashboard-card pending">
+        <i class="fa fa-clock"></i>
+        <h3>Pending Offboarding</h3>
+        <p id="pendingOffboarding">0</p>
+    </div>
+    <div class="dashboard-card completed">
+        <i class="fa fa-check-circle"></i>
+        <h3>Completed Offboarding</h3>
+        <p id="completedOffboarding">0</p>
+    </div>
+</div>
+]]></template>
+    </sp_widget>
+</record_update>

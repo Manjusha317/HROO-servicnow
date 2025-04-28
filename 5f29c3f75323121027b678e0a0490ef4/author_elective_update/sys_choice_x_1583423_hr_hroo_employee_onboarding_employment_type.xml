@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="employment_type" table="x_1583423_hr_hroo_employee_onboarding" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>employment_type</element>
+            <name>x_1583423_hr_hroo_employee_onboarding</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>Manjusha.Jadhav</sys_created_by>
+            <sys_created_on>2025-03-17 07:30:29</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>employment_type</sys_name>
+            <sys_package display_value="HR Onboarding &amp;amp; Offboarding" source="x_1583423_hr_hroo">5f29c3f75323121027b678e0a0490ef4</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="HR Onboarding &amp;amp; Offboarding">5f29c3f75323121027b678e0a0490ef4</sys_scope>
+            <sys_update_name>sys_choice_x_1583423_hr_hroo_employee_onboarding_employment_type</sys_update_name>
+            <sys_updated_by>Manjusha.Jadhav</sys_updated_by>
+            <sys_updated_on>2025-03-17 07:30:29</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>employment_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Contractor</label>
+            <language>en</language>
+            <name>x_1583423_hr_hroo_employee_onboarding</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>Manjusha.Jadhav</sys_created_by>
+            <sys_created_on>2025-03-17 07:31:18</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Manjusha.Jadhav</sys_updated_by>
+            <sys_updated_on>2025-03-17 07:31:18</sys_updated_on>
+            <value>contractor</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>employment_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Full-time</label>
+            <language>en</language>
+            <name>x_1583423_hr_hroo_employee_onboarding</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>Manjusha.Jadhav</sys_created_by>
+            <sys_created_on>2025-03-17 07:30:29</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Manjusha.Jadhav</sys_updated_by>
+            <sys_updated_on>2025-03-17 07:30:29</sys_updated_on>
+            <value>full time</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>employment_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Intern</label>
+            <language>en</language>
+            <name>x_1583423_hr_hroo_employee_onboarding</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>Manjusha.Jadhav</sys_created_by>
+            <sys_created_on>2025-03-17 07:31:02</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Manjusha.Jadhav</sys_updated_by>
+            <sys_updated_on>2025-03-17 07:31:02</sys_updated_on>
+            <value>intern</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>employment_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Part-time</label>
+            <language>en</language>
+            <name>x_1583423_hr_hroo_employee_onboarding</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>Manjusha.Jadhav</sys_created_by>
+            <sys_created_on>2025-03-17 07:30:43</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Manjusha.Jadhav</sys_updated_by>
+            <sys_updated_on>2025-03-17 07:30:43</sys_updated_on>
+            <value>part time</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

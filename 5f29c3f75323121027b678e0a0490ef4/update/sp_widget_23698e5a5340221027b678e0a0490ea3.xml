@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function() {  /* widget controller */  var c = this;};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.task-overview {
+    display: flex;
+    gap: 20px;
+}
+
+.task-card {
+    flex: 1;
+    padding: 20px;
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.task-card.pending { background: #ff9800; } /* Orange */
+.task-card.in-progress { background: #2196f3; } /* Blue */
+.task-card.completed { background: #4caf50; } /* Green */
+</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>hr_task_overview</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>HR Task Overview</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+    var result = {
+        pending: 0,
+        in_progress: 0,
+        completed: 0
+    };
+
+    var gr = new GlideAggregate('x_1583423_hr_hroo_onboarding_task'); // Replace with your Task table name
+    gr.addAggregate('COUNT');
+    gr.addQuery('state', '!=', 'closed'); // Fetch only active tasks
+    gr.groupBy('state');
+    gr.query();
+
+    while (gr.next()) {
+        var state = gr.getValue('state');
+        var count = gr.getAggregate('COUNT');
+
+        if (state == 'pending') result.pending = count;
+        else if (state == 'in_progress') result.in_progress = count;
+        else if (state == 'completed') result.completed = count;
+    }
+
+    data.taskSummary = result;
+})();
+]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>Manjusha.Jadhav</sys_created_by>
+        <sys_created_on>2025-03-05 06:36:45</sys_created_on>
+        <sys_id>23698e5a5340221027b678e0a0490ea3</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>HR Task Overview</sys_name>
+        <sys_package display_value="HR Onboarding &amp;amp; Offboarding" source="x_1583423_hr_hroo">5f29c3f75323121027b678e0a0490ef4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HR Onboarding &amp;amp; Offboarding">5f29c3f75323121027b678e0a0490ef4</sys_scope>
+        <sys_update_name>sp_widget_23698e5a5340221027b678e0a0490ea3</sys_update_name>
+        <sys_updated_by>Manjusha.Jadhav</sys_updated_by>
+        <sys_updated_on>2025-03-05 06:38:48</sys_updated_on>
+        <template><![CDATA[<div class="task-overview">
+    <div class="task-card pending">
+        <h3>Pending Tasks</h3>
+        <p>{{::data.taskSummary.pending}}</p>
+    </div>
+    <div class="task-card in-progress">
+        <h3>In Progress</h3>
+        <p>{{::data.taskSummary.in_progress}}</p>
+    </div>
+    <div class="task-card completed">
+        <h3>Completed Tasks</h3>
+        <p>{{::data.taskSummary.completed}}</p>
+    </div>
+</div>
+]]></template>
+    </sp_widget>
+</record_update>

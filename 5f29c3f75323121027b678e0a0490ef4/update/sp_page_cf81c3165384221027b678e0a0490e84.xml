@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_page">
+    <sp_page action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <css>/* Style for the approval section */
+.approval-section {
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.approval-section button {
+    background-color: #27ae60;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.approval-section button:hover {
+    background-color: #2ecc71;
+}
+
+/* Style for rejected requests */
+.rejected {
+    background-color: #e74c3c;
+    color: white;
+}
+</css>
+        <draft>false</draft>
+        <dynamic_title_structure>document.title = 'Approval Page - ' + g_user.name;</dynamic_title_structure>
+        <human_readable_url_structure>approval</human_readable_url_structure>
+        <id>manager_approval</id>
+        <internal>false</internal>
+        <omit_watcher>false</omit_watcher>
+        <public>false</public>
+        <roles/>
+        <seo_script/>
+        <short_description>"Page for managers to approve or reject onboarding/offboarding requests."</short_description>
+        <sys_class_name>sp_page</sys_class_name>
+        <sys_created_by>Manjusha.Jadhav</sys_created_by>
+        <sys_created_on>2025-03-05 10:41:57</sys_created_on>
+        <sys_id>cf81c3165384221027b678e0a0490e84</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>manager_approval</sys_name>
+        <sys_package display_value="HR Onboarding &amp;amp; Offboarding" source="x_1583423_hr_hroo">5f29c3f75323121027b678e0a0490ef4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HR Onboarding &amp;amp; Offboarding">5f29c3f75323121027b678e0a0490ef4</sys_scope>
+        <sys_update_name>sp_page_cf81c3165384221027b678e0a0490e84</sys_update_name>
+        <sys_updated_by>Manjusha.Jadhav</sys_updated_by>
+        <sys_updated_on>2025-03-05 11:41:22</sys_updated_on>
+        <title>Manager Approval</title>
+        <use_seo_script>false</use_seo_script>
+    </sp_page>
+    <sys_translated_text action="delete_multiple" query="documentkey=cf81c3165384221027b678e0a0490e84"/>
+</record_update>

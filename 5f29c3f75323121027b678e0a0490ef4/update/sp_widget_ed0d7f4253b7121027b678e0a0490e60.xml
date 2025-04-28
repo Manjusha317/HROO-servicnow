@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function($scope, $window, spUtil) {
+    spUtil.getUser().then(function(response) {
+        if (response.roles.includes('hr_manager')) {
+            $scope.vtbUrl = '/$vtb.do?sysparm_query=table=x_your_app_task';
+        } else {
+            $scope.vtbUrl = '/$vtb.do?sysparm_query=table=x_your_app_task^assigned_to=' + response.userID;
+        }
+    });
+}
+]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>onboarding___offboarding_task_board</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>Onboarding &amp; Offboarding Task Board</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {  /* populate the 'data' object */  /* e.g., data.table = $sp.getValue('table'); */})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>Manjusha.Jadhav</sys_created_by>
+        <sys_created_on>2025-02-20 10:07:37</sys_created_on>
+        <sys_id>ed0d7f4253b7121027b678e0a0490e60</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Onboarding &amp; Offboarding Task Board</sys_name>
+        <sys_package display_value="HR Onboarding &amp;amp; Offboarding" source="x_1583423_hr_hroo">5f29c3f75323121027b678e0a0490ef4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HR Onboarding &amp;amp; Offboarding">5f29c3f75323121027b678e0a0490ef4</sys_scope>
+        <sys_update_name>sp_widget_ed0d7f4253b7121027b678e0a0490e60</sys_update_name>
+        <sys_updated_by>Manjusha.Jadhav</sys_updated_by>
+        <sys_updated_on>2025-02-20 10:54:21</sys_updated_on>
+        <template><![CDATA[<div class="vtb-container">
+    <iframe id="vtbFrame" src="/$vtb.do?sysparm_query=table=x_your_app_task" 
+            width="100%" height="600px" style="border: none;"></iframe>
+</div>
+
+<script>
+    setInterval(function() {
+        document.getElementById("vtbFrame").contentWindow.location.reload();
+    }, 3600000); // Refresh every 10 seconds
+</script>
+]]></template>
+    </sp_widget>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>ed0d7f4253b7121027b678e0a0490e60</id>
+        <sys_created_by>Manjusha.Jadhav</sys_created_by>
+        <sys_created_on>2025-02-24 10:25:15</sys_created_on>
+        <sys_id>6667e4ab53b7121027b678e0a0490e9e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Manjusha.Jadhav</sys_updated_by>
+        <sys_updated_on>2025-02-24 10:25:15</sys_updated_on>
+        <table>sp_widget</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="8a577d825300a21027b678e0a0490ee4" sys_domain="global" table="sc_cat_item_guide" version="3" view="">
+        <sys_ui_annotation action="INSERT_OR_UPDATE">
+            <is_plain_text>false</is_plain_text>
+            <sys_created_by>Manjusha.Jadhav</sys_created_by>
+            <sys_created_on>2025-03-04 10:39:16</sys_created_on>
+            <sys_id>0a577d825300a21027b678e0a0490ee0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Manjusha.Jadhav</sys_updated_by>
+            <sys_updated_on>2025-03-04 10:39:16</sys_updated_on>
+            <text>&lt;span&gt;${gs.getMessage("Add relevant tags to the Meta field using comma-separated list of tags. These tags will be used while searching the guide. Not applicable if AI Search is configured.")}&lt;/span&gt;</text>
+            <type display_value="Section Details">19756e5ec3313000bac1addbdfba8f18</type>
+        </sys_ui_annotation>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>name</element>
+            <position>0</position>
+            <sys_created_by>Manjusha.Jadhav</sys_created_by>
+            <sys_created_on>2025-03-04 10:39:16</sys_created_on>
+            <sys_id>42577d825300a21027b678e0a0490ee6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sc_cat_item_guide" sys_domain="global" view="NULL">8a577d825300a21027b678e0a0490ee4</sys_ui_section>
+            <sys_updated_by>Manjusha.Jadhav</sys_updated_by>
+            <sys_updated_on>2025-03-04 10:39:16</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>sc_catalogs</element>
+            <position>1</position>
+            <sys_created_by>Manjusha.Jadhav</sys_created_by>
+            <sys_created_on>2025-03-04 10:39:16</sys_created_on>
+            <sys_id>c25739c25300a21027b678e0a0490e7e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sc_cat_item_guide" sys_domain="global" view="NULL">8a577d825300a21027b678e0a0490ee4</sys_ui_section>
+            <sys_updated_by>Manjusha.Jadhav</sys_updated_by>
+            <sys_updated_on>2025-03-04 10:39:16</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>category</element>
+            <position>2</position>
+            <sys_created_by>Manjusha.Jadhav</sys_created_by>
+            <sys_created_on>2025-03-04 10:39:16</sys_created_on>
+            <sys_id>4a5739c25300a21027b678e0a0490e7e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sc_cat_item_guide" sys_domain="global" view="NULL">8a577d825300a21027b678e0a0490ee4</sys_ui_section>
+            <sys_updated_by>Manjusha.Jadhav</sys_updated_by>
+            <sys_updated_on>2025-03-04 10:39:16</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>two_step</element>
+            <position>3</position>
+            <sys_created_by>Manjusha.Jadhav</sys_created_by>
+            <sys_created_on>2025-03-04 10:39:16</sys_created_on>
+            <sys_id>ce5739c25300a21027b678e0a0490e7e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sc_cat_item_guide" sys_domain="global" view="NULL">8a577d825300a21027b678e0a0490ee4</sys_ui_section>
+            <sys_updated_by>Manjusha.Jadhav</sys_updated_by>
+            <sys_updated_on>2025-03-04 10:39:16</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>4</position>
+            <sys_created_by>Manjusha.Jadhav</sys_created_by>
+            <sys_created_on>2025-03-04 10:39:16</sys_created_on>
+            <sys_id>465739c25300a21027b678e0a0490e7f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sc_cat_item_guide" sys_domain="global" view="NULL">8a577d825300a21027b678e0a0490ee4</sys_ui_section>
+            <sys_updated_by>Manjusha.Jadhav</sys_updated_by>
+            <sys_updated_on>2025-03-04 10:39:16</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>sys_scope</element>
+            <position>5</position>
+            <sys_created_by>Manjusha.Jadhav</sys_created_by>
+            <sys_created_on>2025-03-04 10:39:16</sys_created_on>
+            <sys_id>ca5739c25300a21027b678e0a0490e7f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sc_cat_item_guide" sys_domain="global" view="NULL">8a577d825300a21027b678e0a0490ee4</sys_ui_section>
+            <sys_updated_by>Manjusha.Jadhav</sys_updated_by>
+            <sys_updated_on>2025-03-04 10:39:16</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>active</element>
+            <position>6</position>
+            <sys_created_by>Manjusha.Jadhav</sys_created_by>
+            <sys_created_on>2025-03-04 10:39:16</sys_created_on>
+            <sys_id>425739c25300a21027b678e0a0490e80</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sc_cat_item_guide" sys_domain="global" view="NULL">8a577d825300a21027b678e0a0490ee4</sys_ui_section>
+            <sys_updated_by>Manjusha.Jadhav</sys_updated_by>
+            <sys_updated_on>2025-03-04 10:39:16</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>cascade</element>
+            <position>7</position>
+            <sys_created_by>Manjusha.Jadhav</sys_created_by>
+            <sys_created_on>2025-03-04 10:39:16</sys_created_on>
+            <sys_id>c65739c25300a21027b678e0a0490e80</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sc_cat_item_guide" sys_domain="global" view="NULL">8a577d825300a21027b678e0a0490ee4</sys_ui_section>
+            <sys_updated_by>Manjusha.Jadhav</sys_updated_by>
+            <sys_updated_on>2025-03-04 10:39:16</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>show_variable_help_on_load</element>
+            <position>8</position>
+            <sys_created_by>Manjusha.Jadhav</sys_created_by>
+            <sys_created_on>2025-03-04 10:39:16</sys_created_on>
+            <sys_id>4e5739c25300a21027b678e0a0490e80</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sc_cat_item_guide" sys_domain="global" view="NULL">8a577d825300a21027b678e0a0490ee4</sys_ui_section>
+            <sys_updated_by>Manjusha.Jadhav</sys_updated_by>
+            <sys_updated_on>2025-03-04 10:39:16</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>9</position>
+            <sys_created_by>Manjusha.Jadhav</sys_created_by>
+            <sys_created_on>2025-03-04 10:39:16</sys_created_on>
+            <sys_id>c25739c25300a21027b678e0a0490e81</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sc_cat_item_guide" sys_domain="global" view="NULL">8a577d825300a21027b678e0a0490ee4</sys_ui_section>
+            <sys_updated_by>Manjusha.Jadhav</sys_updated_by>
+            <sys_updated_on>2025-03-04 10:39:16</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>roles</element>
+            <position>10</position>
+            <sys_created_by>Manjusha.Jadhav</sys_created_by>
+            <sys_created_on>2025-03-04 10:39:16</sys_created_on>
+            <sys_id>4a5739c25300a21027b678e0a0490e81</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sc_cat_item_guide" sys_domain="global" view="NULL">8a577d825300a21027b678e0a0490ee4</sys_ui_section>
+            <sys_updated_by>Manjusha.Jadhav</sys_updated_by>
+            <sys_updated_on>2025-03-04 10:39:16</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>short_description</element>
+            <position>11</position>
+            <sys_created_by>Manjusha.Jadhav</sys_created_by>
+            <sys_created_on>2025-03-04 10:39:16</sys_created_on>
+            <sys_id>ce5739c25300a21027b678e0a0490e81</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sc_cat_item_guide" sys_domain="global" view="NULL">8a577d825300a21027b678e0a0490ee4</sys_ui_section>
+            <sys_updated_by>Manjusha.Jadhav</sys_updated_by>
+            <sys_updated_on>2025-03-04 10:39:16</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>description</element>
+            <position>12</position>
+            <sys_created_by>Manjusha.Jadhav</sys_created_by>
+            <sys_created_on>2025-03-04 10:39:16</sys_created_on>
+            <sys_id>465739c25300a21027b678e0a0490e82</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sc_cat_item_guide" sys_domain="global" view="NULL">8a577d825300a21027b678e0a0490ee4</sys_ui_section>
+            <sys_updated_by>Manjusha.Jadhav</sys_updated_by>
+            <sys_updated_on>2025-03-04 10:39:16</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>0a577d825300a21027b678e0a0490ee0</element>
+            <position>13</position>
+            <sys_created_by>Manjusha.Jadhav</sys_created_by>
+            <sys_created_on>2025-03-04 10:39:16</sys_created_on>
+            <sys_id>ca5739c25300a21027b678e0a0490e82</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sc_cat_item_guide" sys_domain="global" view="NULL">8a577d825300a21027b678e0a0490ee4</sys_ui_section>
+            <sys_updated_by>Manjusha.Jadhav</sys_updated_by>
+            <sys_updated_on>2025-03-04 10:39:16</sys_updated_on>
+            <sys_user/>
+            <type>annotation</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>meta</element>
+            <position>14</position>
+            <sys_created_by>Manjusha.Jadhav</sys_created_by>
+            <sys_created_on>2025-03-04 10:39:16</sys_created_on>
+            <sys_id>425739c25300a21027b678e0a0490e83</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sc_cat_item_guide" sys_domain="global" view="NULL">8a577d825300a21027b678e0a0490ee4</sys_ui_section>
+            <sys_updated_by>Manjusha.Jadhav</sys_updated_by>
+            <sys_updated_on>2025-03-04 10:39:16</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>icon</element>
+            <position>15</position>
+            <sys_created_by>Manjusha.Jadhav</sys_created_by>
+            <sys_created_on>2025-03-04 10:39:16</sys_created_on>
+            <sys_id>c65739c25300a21027b678e0a0490e83</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sc_cat_item_guide" sys_domain="global" view="NULL">8a577d825300a21027b678e0a0490ee4</sys_ui_section>
+            <sys_updated_by>Manjusha.Jadhav</sys_updated_by>
+            <sys_updated_on>2025-03-04 10:39:16</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>picture</element>
+            <position>16</position>
+            <sys_created_by>Manjusha.Jadhav</sys_created_by>
+            <sys_created_on>2025-03-04 10:39:16</sys_created_on>
+            <sys_id>4e5739c25300a21027b678e0a0490e83</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sc_cat_item_guide" sys_domain="global" view="NULL">8a577d825300a21027b678e0a0490ee4</sys_ui_section>
+            <sys_updated_by>Manjusha.Jadhav</sys_updated_by>
+            <sys_updated_on>2025-03-04 10:39:16</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>sc_cat_item_guide</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>Manjusha.Jadhav</sys_created_by>
+            <sys_created_on>2025-03-04 10:39:16</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8a577d825300a21027b678e0a0490ee4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>sc_cat_item_guide</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="HR Onboarding &amp;amp; Offboarding" source="x_1583423_hr_hroo">5f29c3f75323121027b678e0a0490ef4</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="HR Onboarding &amp;amp; Offboarding">5f29c3f75323121027b678e0a0490ef4</sys_scope>
+            <sys_update_name>sys_ui_section_8a577d825300a21027b678e0a0490ee4</sys_update_name>
+            <sys_updated_by>Manjusha.Jadhav</sys_updated_by>
+            <sys_updated_on>2025-03-04 10:39:16</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view/>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

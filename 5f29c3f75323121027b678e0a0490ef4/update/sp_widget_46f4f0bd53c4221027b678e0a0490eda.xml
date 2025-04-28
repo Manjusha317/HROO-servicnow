@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[/*api.controller=function toggleMenu() {
+    var navLinks = document.querySelector(".nav-links");
+    if (navLinks.classList.contains("show")) {
+        navLinks.classList.remove("show");
+    } else {
+        navLinks.classList.add("show");
+    }
+}
+
+function logout() {
+    // Display confirmation before logging out
+    var confirmLogout = confirm("Are you sure you want to log out?");
+    if (confirmLogout) {
+        // Redirect to ServiceNow logout URL (adjust based on your instance)
+        window.location.href = "/logout.do";
+    }
+*/
+(function() {
+    api.controller = function($scope) {
+        $scope.menu = "hr_navigation_menu"; // Setting the navigation menu
+    };
+})();
+]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0077cc;
+    padding: 15px 20px;
+    color: white;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background: #0077cc;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>hr_onboarding_offboarding_header</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>HR Onboarding Offboarding Header</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[import React from "react";
+import { Link } from "@servicenow/ui-router";
+import { Avatar } from "@servicenow/ui/avatar";
+import { Button } from "@servicenow/ui/button";
+
+const Header = ({ user }) => {
+    return (
+        <header className="flex justify-between items-center p-4 bg-blue-600 text-white shadow-md">
+            {/* Logo & Title */}
+            <div className="flex items-center">
+                <img src="/sys_attachment.do?sys_id=YOUR_LOGO_SYS_ID" alt="HR Portal Logo" className="h-10 w-10 mr-2" />
+                <h1 className="text-xl font-bold">HR Onboarding & Offboarding</h1>
+            </div>
+
+            {/* Navigation Menu */}
+            <nav className="hidden md:flex space-x-6">
+                <Link to="/onboarding" className="hover:underline">Onboarding</Link>
+                <Link to="/offboarding" className="hover:underline">Offboarding</Link>
+                <Link to="/dashboard" className="hover:underline">Dashboard</Link>
+                <Link to="/tasks" className="hover:underline">Tasks</Link>
+                <Link to="/approvals" className="hover:underline">Approvals</Link>
+            </nav>
+
+            {/* User Profile */}
+            <div className="flex items-center">
+                <Avatar src={user.profileImage} size="md" />
+                <span className="ml-2">{user.name}</span>
+                <Button variant="tertiary" icon="logout-line" aria-label="Logout" className="ml-4" />
+            </div>
+        </header>
+    );
+};
+
+export default Header;
+]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>Manjusha.Jadhav</sys_created_by>
+        <sys_created_on>2025-03-03 11:10:47</sys_created_on>
+        <sys_id>46f4f0bd53c4221027b678e0a0490eda</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>HR Onboarding Offboarding Header</sys_name>
+        <sys_package display_value="HR Onboarding &amp;amp; Offboarding" source="x_1583423_hr_hroo">5f29c3f75323121027b678e0a0490ef4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HR Onboarding &amp;amp; Offboarding">5f29c3f75323121027b678e0a0490ef4</sys_scope>
+        <sys_update_name>sp_widget_46f4f0bd53c4221027b678e0a0490eda</sys_update_name>
+        <sys_updated_by>Manjusha.Jadhav</sys_updated_by>
+        <sys_updated_on>2025-03-05 09:43:04</sys_updated_on>
+        <template><![CDATA[<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">HR Onboarding & Offboarding</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Onboarding Requests</a></li>
+            <li><a href="#">Offboarding Requests</a></li>
+            <li><a href="#">Approvals</a></li>
+            <li><a href="#">Dashboard</a></li>
+        </ul>
+        <div class="user-profile">
+            <span class="user-icon">]]>👤<![CDATA[</span>
+            <button class="logout-btn" onclick="logout()">Logout</button>
+        </div>
+        <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+    </nav>
+
+    <script src="script.js"></script>
+</body>
+</html>
+]]></template>
+    </sp_widget>
+</record_update>

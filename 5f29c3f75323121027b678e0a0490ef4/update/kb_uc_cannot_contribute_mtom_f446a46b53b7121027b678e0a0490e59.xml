@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="kb_uc_cannot_contribute_mtom">
+    <kb_uc_cannot_contribute_mtom action="INSERT_OR_UPDATE">
+        <kb_knowledge_base display_value="Employee Onboarding &amp; Offboarding KB">0ce5246b53b7121027b678e0a0490ee7</kb_knowledge_base>
+        <sys_class_name>kb_uc_cannot_contribute_mtom</sys_class_name>
+        <sys_created_by>Manjusha.Jadhav</sys_created_by>
+        <sys_created_on>2025-02-24 10:20:12</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f446a46b53b7121027b678e0a0490e59</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Employee Onboarding &amp; Offboarding KB.Guest User</sys_name>
+        <sys_package display_value="HR Onboarding &amp;amp; Offboarding" source="x_1583423_hr_hroo">5f29c3f75323121027b678e0a0490ef4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HR Onboarding &amp;amp; Offboarding">5f29c3f75323121027b678e0a0490ef4</sys_scope>
+        <sys_update_name>kb_uc_cannot_contribute_mtom_f446a46b53b7121027b678e0a0490e59</sys_update_name>
+        <sys_updated_by>Manjusha.Jadhav</sys_updated_by>
+        <sys_updated_on>2025-02-24 10:20:12</sys_updated_on>
+        <user_criteria display_value="Guest User">76f09af6cb1200108ad442fcf7076dbf</user_criteria>
+    </kb_uc_cannot_contribute_mtom>
+</record_update>

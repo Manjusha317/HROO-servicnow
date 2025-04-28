@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_theme_css_include">
+    <m2m_sp_theme_css_include action="INSERT_OR_UPDATE">
+        <order>250</order>
+        <sp_css_include display_value="ec-theme-catalogs-dark">bd7225a5c9711110f8772154ff55122a</sp_css_include>
+        <sp_theme display_value="HROO Theme">5ee16fc35390221027b678e0a0490ea1</sp_theme>
+        <sys_class_name>m2m_sp_theme_css_include</sys_class_name>
+        <sys_created_by>Manjusha.Jadhav</sys_created_by>
+        <sys_created_on>2025-03-20 07:15:37</sys_created_on>
+        <sys_id>141223075390221027b678e0a0490efd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ec-theme-catalogs-dark.HROO Theme</sys_name>
+        <sys_package display_value="HR Onboarding &amp;amp; Offboarding" source="x_1583423_hr_hroo">5f29c3f75323121027b678e0a0490ef4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HR Onboarding &amp;amp; Offboarding">5f29c3f75323121027b678e0a0490ef4</sys_scope>
+        <sys_update_name>m2m_sp_theme_css_include_141223075390221027b678e0a0490efd</sys_update_name>
+        <sys_updated_by>Manjusha.Jadhav</sys_updated_by>
+        <sys_updated_on>2025-03-20 07:15:37</sys_updated_on>
+    </m2m_sp_theme_css_include>
+</record_update>

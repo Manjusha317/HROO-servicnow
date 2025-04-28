@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_widget">
+    <par_dashboard_widget action="DELETE">
+        <canvas display_value="">338f73c05373121027b678e0a0490ea5</canvas>
+        <component display_value="Process Mining - Map">fae2251857efe4b8a1b23fa30ee0f9b0</component>
+        <component_props>{"projectId":"","diagramType":"process","nodePercentage":100,"enableCaseFollowSimulation":false,"showHeader":true,"showHeaderSeparator":false,"showBorder":true,"diagramColorConfiguration":{"pill":{"nameStroke":"","valueStroke":"","startEndActivityBorder":"","startEndActivityFill":"","fill":"","border":"","hoverBorder":"","hoverFill":"","selectedFill":"","selectedBorder":""},"link":{"defaultStroke":"","valueShapeFill":"","valueStroke":"","selectedStroke":"","selectedValueShapeFill":"","hoverStroke":""},"tooltip":{"background":"","textStroke":""},"informationPanel":{"bodyBackground":"","headerBackground":"","headerPrimaryTextColor":"","headerSecondaryTextColor":"","metricSecondaryColor":"","sectionTitleColor":"","closeButton":"","actionButtonVariant":{"primary":false,"primary-positive":false,"primary-negative":false,"secondary":false,"secondary-positive":false,"secondary-negative":false,"tertiary":false}}},"followFilters":true,"filterConfigurations":"@state.parFilters","processGraphOrientation":"vertical","showNodeArcPopupActions":true}</component_props>
+        <h>13</h>
+        <name/>
+        <stored_component/>
+        <sys_class_name>par_dashboard_widget</sys_class_name>
+        <sys_created_by>Manjusha.Jadhav</sys_created_by>
+        <sys_created_on>2025-02-14 05:31:20</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>3b3440185373121027b678e0a0490e1c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="HR Onboarding &amp;amp; Offboarding" source="x_1583423_hr_hroo">5f29c3f75323121027b678e0a0490ef4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HR Onboarding &amp;amp; Offboarding">5f29c3f75323121027b678e0a0490ef4</sys_scope>
+        <sys_update_name>par_dashboard_widget_3b3440185373121027b678e0a0490e1c</sys_update_name>
+        <sys_updated_by>Manjusha.Jadhav</sys_updated_by>
+        <sys_updated_on>2025-02-14 05:31:20</sys_updated_on>
+        <visualization/>
+        <w>13</w>
+        <widget_props/>
+        <x>12</x>
+        <y>0</y>
+    </par_dashboard_widget>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="HR Onboarding &amp;amp; Offboarding">5f29c3f75323121027b678e0a0490ef4</application>
+        <file_path/>
+        <instance_id>5b9be94adb66359c02d91729139619cc</instance_id>
+        <instance_name>dev215488</instance_name>
+        <name>par_dashboard_widget_3b3440185373121027b678e0a0490e1c</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_widget"><par_dashboard_widget action="INSERT_OR_UPDATE"><canvas display_value="">338f73c05373121027b678e0a0490ea5</canvas><component display_value="Process Mining - Map">fae2251857efe4b8a1b23fa30ee0f9b0</component><component_props>{"projectId":"","diagramType":"process","nodePercentage":100,"enableCaseFollowSimulation":false,"showHeader":true,"showHeaderSeparator":false,"showBorder":true,"diagramColorConfiguration":{"pill":{"nameStroke":"","valueStroke":"","startEndActivityBorder":"","startEndActivityFill":"","fill":"","border":"","hoverBorder":"","hoverFill":"","selectedFill":"","selectedBorder":""},"link":{"defaultStroke":"","valueShapeFill":"","valueStroke":"","selectedStroke":"","selectedValueShapeFill":"","hoverStroke":""},"tooltip":{"background":"","textStroke":""},"informationPanel":{"bodyBackground":"","headerBackground":"","headerPrimaryTextColor":"","headerSecondaryTextColor":"","metricSecondaryColor":"","sectionTitleColor":"","closeButton":"","actionButtonVariant":{"primary":false,"primary-positive":false,"primary-negative":false,"secondary":false,"secondary-positive":false,"secondary-negative":false,"tertiary":false}}},"followFilters":true,"filterConfigurations":"@state.parFilters","processGraphOrientation":"vertical","showNodeArcPopupActions":true}</component_props><h>13</h><name/><stored_component/><sys_class_name>par_dashboard_widget</sys_class_name><sys_created_by>Manjusha.Jadhav</sys_created_by><sys_created_on>2025-02-14 05:31:20</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>3b3440185373121027b678e0a0490e1c</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_overrides/><sys_package display_value="HR Onboarding &amp;amp; Offboarding" source="x_1583423_hr_hroo">5f29c3f75323121027b678e0a0490ef4</sys_package><sys_policy/><sys_scope display_value="HR Onboarding &amp;amp; Offboarding">5f29c3f75323121027b678e0a0490ef4</sys_scope><sys_update_name>par_dashboard_widget_3b3440185373121027b678e0a0490e1c</sys_update_name><sys_updated_by>Manjusha.Jadhav</sys_updated_by><sys_updated_on>2025-02-14 05:31:20</sys_updated_on><visualization/><w>13</w><widget_props/><x>12</x><y>0</y></par_dashboard_widget></record_update>]]></payload>
+        <payload_hash>1435713780</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>655097775363121027b678e0a0490ebe</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Manjusha.Jadhav</sys_created_by>
+        <sys_created_on>2025-02-14 05:31:20</sys_created_on>
+        <sys_id>f73440185373121027b678e0a0490e1e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19502f0a5870000001</sys_recorded_at>
+        <sys_updated_by>Manjusha.Jadhav</sys_updated_by>
+        <sys_updated_on>2025-02-14 05:31:20</sys_updated_on>
+        <type>PAR Dashboard Widget</type>
+        <update_guid>fb344018d4731210e64d007705c86a1d</update_guid>
+        <update_guid_history>fb344018d4731210e64d007705c86a1d:1435713780</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">323e405453b3121027b678e0a0490e5b</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Manjusha.Jadhav</sys_created_by>
+        <sys_created_on>2025-02-14 06:14:56</sys_created_on>
+        <sys_db_object display_value="" name="par_dashboard_widget">par_dashboard_widget</sys_db_object>
+        <sys_id>3f0d9dbbace444e39cd791960bcaab51</sys_id>
+        <sys_metadata>3b3440185373121027b678e0a0490e1c</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="HR Onboarding &amp;amp; Offboarding" source="x_1583423_hr_hroo">5f29c3f75323121027b678e0a0490ef4</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="HR Onboarding &amp;amp; Offboarding">5f29c3f75323121027b678e0a0490ef4</sys_scope>
+        <sys_scope_delete display_value="">426438089e2a41478a3875bc719e2ce1</sys_scope_delete>
+        <sys_update_name>par_dashboard_widget_3b3440185373121027b678e0a0490e1c</sys_update_name>
+        <sys_update_version display_value="par_dashboard_widget_3b3440185373121027b678e0a0490e1c">f73440185373121027b678e0a0490e1e</sys_update_version>
+        <sys_updated_by>Manjusha.Jadhav</sys_updated_by>
+        <sys_updated_on>2025-02-14 06:14:56</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

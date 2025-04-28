@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_wizard_answer">
+    <sys_wizard_answer action="DELETE">
+        <active>true</active>
+        <answer>Onboarding Task</answer>
+        <button_label/>
+        <dependent_value/>
+        <element/>
+        <name>Onboarding Task</name>
+        <next_question/>
+        <order>100</order>
+        <payload_name/>
+        <question display_value="Task" name="Task">48809368dc1212104f34465061b06a71</question>
+        <roles/>
+        <script/>
+        <sys_class_name>sys_wizard_answer</sys_class_name>
+        <sys_created_by>Manjusha.Jadhav</sys_created_by>
+        <sys_created_on>2025-02-13 09:32:46</sys_created_on>
+        <sys_id>7ee1b3335327121027b678e0a0490ec7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Onboarding Task</sys_name>
+        <sys_package display_value="HR Onboarding &amp;amp; Offboarding" source="x_1583423_hr_hroo">5f29c3f75323121027b678e0a0490ef4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HR Onboarding &amp;amp; Offboarding">5f29c3f75323121027b678e0a0490ef4</sys_scope>
+        <sys_update_name>sys_wizard_answer_7ee1b3335327121027b678e0a0490ec7</sys_update_name>
+        <sys_updated_by>Manjusha.Jadhav</sys_updated_by>
+        <sys_updated_on>2025-02-13 09:32:46</sys_updated_on>
+        <table/>
+        <target_url>x_1583423_hr_hroo_onboarding_task.do</target_url>
+        <type>1</type>
+    </sys_wizard_answer>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="HR Onboarding &amp;amp; Offboarding">5f29c3f75323121027b678e0a0490ef4</application>
+        <file_path/>
+        <instance_id>5b9be94adb66359c02d91729139619cc</instance_id>
+        <instance_name>dev215488</instance_name>
+        <name>sys_wizard_answer_7ee1b3335327121027b678e0a0490ec7</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_wizard_answer"><sys_wizard_answer action="INSERT_OR_UPDATE"><active>true</active><answer>Onboarding Task</answer><button_label/><dependent_value/><element/><name>Onboarding Task</name><next_question/><order>100</order><payload_name/><question display_value="Task" name="Task">48809368dc1212104f34465061b06a71</question><roles/><script/><sys_class_name>sys_wizard_answer</sys_class_name><sys_created_by>Manjusha.Jadhav</sys_created_by><sys_created_on>2025-02-13 09:32:46</sys_created_on><sys_id>7ee1b3335327121027b678e0a0490ec7</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Onboarding Task</sys_name><sys_package display_value="HR Onboarding &amp;amp; Offboarding" source="x_1583423_hr_hroo">5f29c3f75323121027b678e0a0490ef4</sys_package><sys_policy/><sys_scope display_value="HR Onboarding &amp;amp; Offboarding">5f29c3f75323121027b678e0a0490ef4</sys_scope><sys_update_name>sys_wizard_answer_7ee1b3335327121027b678e0a0490ec7</sys_update_name><sys_updated_by>Manjusha.Jadhav</sys_updated_by><sys_updated_on>2025-02-13 09:32:46</sys_updated_on><table/><target_url>x_1583423_hr_hroo_onboarding_task.do</target_url><type>1</type></sys_wizard_answer></record_update>]]></payload>
+        <payload_hash>-576566779</payload_hash>
+        <record_name>Onboarding Task</record_name>
+        <reverted_from/>
+        <source/>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>Manjusha.Jadhav</sys_created_by>
+        <sys_created_on>2025-03-17 12:31:13</sys_created_on>
+        <sys_id>78adc5165358221027b678e0a0490e08</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>195a41633b20000001</sys_recorded_at>
+        <sys_updated_by>Manjusha.Jadhav</sys_updated_by>
+        <sys_updated_on>2025-03-17 12:31:13</sys_updated_on>
+        <type>Answer</type>
+        <update_guid>38adc51622582210e0291fff06e80808</update_guid>
+        <update_guid_history>38adc51622582210e0291fff06e80808:-576566779</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Manjusha.Jadhav</sys_created_by>
+        <sys_created_on>2025-03-17 12:31:13</sys_created_on>
+        <sys_db_object display_value="" name="sys_wizard_answer">sys_wizard_answer</sys_db_object>
+        <sys_id>a637ce3163fb497099d80fc39baa0840</sys_id>
+        <sys_metadata>7ee1b3335327121027b678e0a0490ec7</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Onboarding Task</sys_name>
+        <sys_package display_value="HR Onboarding &amp;amp; Offboarding" source="x_1583423_hr_hroo">5f29c3f75323121027b678e0a0490ef4</sys_package>
+        <sys_parent display_value="Task">48809368dc1212104f34465061b06a71</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="HR Onboarding &amp;amp; Offboarding">5f29c3f75323121027b678e0a0490ef4</sys_scope>
+        <sys_scope_delete display_value="">426438089e2a41478a3875bc719e2ce1</sys_scope_delete>
+        <sys_update_name>sys_wizard_answer_7ee1b3335327121027b678e0a0490ec7</sys_update_name>
+        <sys_update_version display_value="sys_wizard_answer_7ee1b3335327121027b678e0a0490ec7">78adc5165358221027b678e0a0490e08</sys_update_version>
+        <sys_updated_by>Manjusha.Jadhav</sys_updated_by>
+        <sys_updated_on>2025-03-17 12:31:13</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

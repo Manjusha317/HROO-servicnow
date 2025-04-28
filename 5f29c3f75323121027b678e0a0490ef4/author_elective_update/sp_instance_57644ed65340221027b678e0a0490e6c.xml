@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="DELETE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>4</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">5e7c868e5340a21027b678e0a0490eef</sp_column>
+        <sp_widget display_value="HR Full Request Management">385282d25340221027b678e0a0490e50</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>Manjusha.Jadhav</sys_created_by>
+        <sys_created_on>2025-03-05 06:14:54</sys_created_on>
+        <sys_id>57644ed65340221027b678e0a0490e6c</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="HR Onboarding &amp;amp; Offboarding" source="x_1583423_hr_hroo">5f29c3f75323121027b678e0a0490ef4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HR Onboarding &amp;amp; Offboarding">5f29c3f75323121027b678e0a0490ef4</sys_scope>
+        <sys_update_name>sp_instance_57644ed65340221027b678e0a0490e6c</sys_update_name>
+        <sys_updated_by>Manjusha.Jadhav</sys_updated_by>
+        <sys_updated_on>2025-03-06 05:44:51</sys_updated_on>
+        <title/>
+        <url/>
+        <widget_parameters/>
+    </sp_instance>
+    <sys_translated_text action="DELETE" query="documentkey=57644ed65340221027b678e0a0490e6c"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="HR Onboarding &amp;amp; Offboarding">5f29c3f75323121027b678e0a0490ef4</application>
+        <file_path/>
+        <instance_id>5b9be94adb66359c02d91729139619cc</instance_id>
+        <instance_name>dev215488</instance_name>
+        <name>sp_instance_57644ed65340221027b678e0a0490e6c</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance"><sp_instance action="INSERT_OR_UPDATE"><active>true</active><class_name/><color>default</color><css/><glyph/><id/><order>4</order><roles/><short_description/><size>md</size><sp_column display_value="1">5e7c868e5340a21027b678e0a0490eef</sp_column><sp_widget display_value="HR Full Request Management">385282d25340221027b678e0a0490e50</sp_widget><sys_class_name>sp_instance</sys_class_name><sys_created_by>Manjusha.Jadhav</sys_created_by><sys_created_on>2025-03-05 06:14:54</sys_created_on><sys_id>57644ed65340221027b678e0a0490e6c</sys_id><sys_mod_count>20</sys_mod_count><sys_name/><sys_package display_value="HR Onboarding &amp;amp; Offboarding" source="x_1583423_hr_hroo">5f29c3f75323121027b678e0a0490ef4</sys_package><sys_policy/><sys_scope display_value="HR Onboarding &amp;amp; Offboarding">5f29c3f75323121027b678e0a0490ef4</sys_scope><sys_update_name>sp_instance_57644ed65340221027b678e0a0490e6c</sys_update_name><sys_updated_by>Manjusha.Jadhav</sys_updated_by><sys_updated_on>2025-03-06 05:44:51</sys_updated_on><title/><url/><widget_parameters/></sp_instance><sys_translated_text action="delete_multiple" query="documentkey=57644ed65340221027b678e0a0490e6c"/></record_update>]]></payload>
+        <payload_hash>1315883471</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>db29c33f5323121027b678e0a0490ed8</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Manjusha.Jadhav</sys_created_by>
+        <sys_created_on>2025-03-06 05:44:51</sys_created_on>
+        <sys_id>7427cbe25340221027b678e0a0490e62</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19569fc36960000001</sys_recorded_at>
+        <sys_updated_by>Manjusha.Jadhav</sys_updated_by>
+        <sys_updated_on>2025-03-06 05:44:51</sys_updated_on>
+        <type>Instance</type>
+        <update_guid>f827cbe21740221022daac81f4f4f361</update_guid>
+        <update_guid_history>f827cbe21740221022daac81f4f4f361:1315883471,fd44b2161144221057dd617add5eb091:1292192622,82775a1216c022104c07aa24925a6ddc:1315883471,75059a5e8c8022103e3631fc36e0aaf9:1339574320,b4d3d21e88802210ee6eaa3ded808fc3:1315883471,ffc3d21ee8802210ac26c21c5588235c:1339574320,b282da9aa18022104a6d910c71ddc924:1315883471,b4829a9abe802210fbc3230db660de24:1339574320,23a0561ae9802210742e96a661be188f:1315883471,8ea0161ad780221043379e48fc1dacfa:1339574320,38dece56178022100e5751441aff1a6c:1315883471,33ce8e56bd802210c60a71d01c266112:1339574320,ff6d0216f680221052fa67a15d900a5a:1315883471,e96dced2c5802210e9abce0e414cebc5:1339574320,d7ec86d20c8022101ce4dc000a95d44d:1315883471,3dec46d2fa802210ba41764e9a9b0dc5:1339574320,961c469231802210310c0f24e66443a2:1315883471,811c4692628022107e795e4a3ba56424:1339574320,56da4e12bd802210b7e5d513deea6509:1315883471,a8b946de7b402210eb0c27ca29a0fd02:1339574320,13644ed633402210ad5a6b16fc668c6e:1363265169</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">6e470fe25340221027b678e0a0490ef0</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Manjusha.Jadhav</sys_created_by>
+        <sys_created_on>2025-03-06 05:45:31</sys_created_on>
+        <sys_db_object display_value="" name="sp_instance">sp_instance</sys_db_object>
+        <sys_id>6a260cd68b6343809795d81cb1601000</sys_id>
+        <sys_metadata>57644ed65340221027b678e0a0490e6c</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="HR Onboarding &amp;amp; Offboarding" source="x_1583423_hr_hroo">5f29c3f75323121027b678e0a0490ef4</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="HR Onboarding &amp;amp; Offboarding">5f29c3f75323121027b678e0a0490ef4</sys_scope>
+        <sys_scope_delete display_value="">426438089e2a41478a3875bc719e2ce1</sys_scope_delete>
+        <sys_update_name>sp_instance_57644ed65340221027b678e0a0490e6c</sys_update_name>
+        <sys_update_version display_value="sp_instance_57644ed65340221027b678e0a0490e6c">7427cbe25340221027b678e0a0490e62</sys_update_version>
+        <sys_updated_by>Manjusha.Jadhav</sys_updated_by>
+        <sys_updated_on>2025-03-06 05:45:31</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

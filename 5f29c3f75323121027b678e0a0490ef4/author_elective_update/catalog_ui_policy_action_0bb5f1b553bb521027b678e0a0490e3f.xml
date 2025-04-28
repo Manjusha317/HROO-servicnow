@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="DELETE">
+        <catalog_item display_value="Employee Onboarding Request HROO">932bb4395308221027b678e0a0490ef3</catalog_item>
+        <catalog_variable>IO:145c7da1533b121027b678e0a0490ea3</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>true</disabled>
+        <field/>
+        <field_message/>
+        <field_message_type>none</field_message_type>
+        <mandatory>ignore</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>Manjusha.Jadhav</sys_created_by>
+        <sys_created_on>2025-02-19 05:38:10</sys_created_on>
+        <sys_id>0bb5f1b553bb521027b678e0a0490e3f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>job_title</sys_name>
+        <sys_package display_value="HR Onboarding &amp;amp; Offboarding" source="x_1583423_hr_hroo">5f29c3f75323121027b678e0a0490ef4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HR Onboarding &amp;amp; Offboarding">5f29c3f75323121027b678e0a0490ef4</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_0bb5f1b553bb521027b678e0a0490e3f</sys_update_name>
+        <sys_updated_by>Manjusha.Jadhav</sys_updated_by>
+        <sys_updated_on>2025-02-19 05:38:10</sys_updated_on>
+        <table/>
+        <ui_policy display_value="making fields read only after submission">6835b93553bb521027b678e0a0490e8c</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
+        <variable>job_title</variable>
+        <variable_set/>
+        <visible>ignore</visible>
+    </catalog_ui_policy_action>
+    <sys_translated_text action="DELETE" query="documentkey=0bb5f1b553bb521027b678e0a0490e3f"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="HR Onboarding &amp;amp; Offboarding">5f29c3f75323121027b678e0a0490ef4</application>
+        <file_path/>
+        <instance_id>5b9be94adb66359c02d91729139619cc</instance_id>
+        <instance_name>dev215488</instance_name>
+        <name>catalog_ui_policy_action_0bb5f1b553bb521027b678e0a0490e3f</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action"><catalog_ui_policy_action action="INSERT_OR_UPDATE"><catalog_item display_value="Employee Onboarding Request HROO">932bb4395308221027b678e0a0490ef3</catalog_item><catalog_variable>IO:145c7da1533b121027b678e0a0490ea3</catalog_variable><cleared>false</cleared><disabled>true</disabled><field/><field_message/><field_message_type>none</field_message_type><mandatory>ignore</mandatory><order>100</order><sys_class_name>catalog_ui_policy_action</sys_class_name><sys_created_by>Manjusha.Jadhav</sys_created_by><sys_created_on>2025-02-19 05:38:10</sys_created_on><sys_id>0bb5f1b553bb521027b678e0a0490e3f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>job_title</sys_name><sys_package display_value="HR Onboarding &amp;amp; Offboarding" source="x_1583423_hr_hroo">5f29c3f75323121027b678e0a0490ef4</sys_package><sys_policy/><sys_scope display_value="HR Onboarding &amp;amp; Offboarding">5f29c3f75323121027b678e0a0490ef4</sys_scope><sys_update_name>catalog_ui_policy_action_0bb5f1b553bb521027b678e0a0490e3f</sys_update_name><sys_updated_by>Manjusha.Jadhav</sys_updated_by><sys_updated_on>2025-02-19 05:38:10</sys_updated_on><table/><ui_policy display_value="making fields read only after submission">6835b93553bb521027b678e0a0490e8c</ui_policy><value/><value_action>ignore</value_action><variable>job_title</variable><variable_set/><visible>ignore</visible></catalog_ui_policy_action><sys_translated_text action="delete_multiple" query="documentkey=0bb5f1b553bb521027b678e0a0490e3f"/></record_update>]]></payload>
+        <payload_hash>78705294</payload_hash>
+        <record_name>job_title</record_name>
+        <reverted_from/>
+        <source>5c2ef90e5300a21027b678e0a0490e60</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Manjusha.Jadhav</sys_created_by>
+        <sys_created_on>2025-03-04 11:08:56</sys_created_on>
+        <sys_id>602ef90e5300a21027b678e0a0490eef</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19560d833080000001</sys_recorded_at>
+        <sys_updated_by>Manjusha.Jadhav</sys_updated_by>
+        <sys_updated_on>2025-03-04 11:08:56</sys_updated_on>
+        <type>Catalog UI Policy Action</type>
+        <update_guid>642ef90ed200a210cd4223334f2a6fee</update_guid>
+        <update_guid_history>642ef90ed200a210cd4223334f2a6fee:78705294,7519b875e00822105e56ffbfe1e74460:0,7cc535b5dbbb52106c55e9c929e9a031:1703841427</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="job_title">f8ea6c485394221027b678e0a0490e80</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Manjusha.Jadhav</sys_created_by>
+        <sys_created_on>2025-03-10 10:13:04</sys_created_on>
+        <sys_db_object display_value="" name="catalog_ui_policy_action">catalog_ui_policy_action</sys_db_object>
+        <sys_id>035c94e0c71d4ac88050fdc5b5ebd9a1</sys_id>
+        <sys_metadata>0bb5f1b553bb521027b678e0a0490e3f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>job_title</sys_name>
+        <sys_package display_value="HR Onboarding &amp;amp; Offboarding" source="x_1583423_hr_hroo">5f29c3f75323121027b678e0a0490ef4</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="HR Onboarding &amp;amp; Offboarding">5f29c3f75323121027b678e0a0490ef4</sys_scope>
+        <sys_scope_delete display_value="">426438089e2a41478a3875bc719e2ce1</sys_scope_delete>
+        <sys_update_name>catalog_ui_policy_action_0bb5f1b553bb521027b678e0a0490e3f</sys_update_name>
+        <sys_update_version display_value="catalog_ui_policy_action_0bb5f1b553bb521027b678e0a0490e3f">602ef90e5300a21027b678e0a0490eef</sys_update_version>
+        <sys_updated_by>Manjusha.Jadhav</sys_updated_by>
+        <sys_updated_on>2025-03-10 10:13:04</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

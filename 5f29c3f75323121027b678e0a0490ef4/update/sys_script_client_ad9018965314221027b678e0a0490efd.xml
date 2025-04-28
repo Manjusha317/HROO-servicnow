@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>equipment_type</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Show/Hide Equipment Fields</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+    if (isLoading || newValue === '') {
+        return;
+    }
+(function executeRule(current, gForm, gSNC) {
+    var equipType = gForm.getValue('equipment_type');
+
+    if (equipType === 'Hardware') {
+        gForm.setMandatory('hardware_item', true);
+        gForm.setMandatory('software_item', false);
+        gForm.setVisible('hardware_item', true);
+        gForm.setVisible('software_item', false);
+        gForm.clearValue('software_item');
+    } else if (equipType === 'Software') {
+        gForm.setMandatory('software_item', true);
+        gForm.setMandatory('hardware_item', false);
+        gForm.setVisible('software_item', true);
+        gForm.setVisible('hardware_item', false);
+        gForm.clearValue('hardware_item');
+    } else {
+        gForm.setMandatory('hardware_item', false);
+        gForm.setMandatory('software_item', false);
+        gForm.setVisible('hardware_item', false);
+        gForm.setVisible('software_item', false);
+        gForm.clearValue('hardware_item');
+        gForm.clearValue('software_item');
+    }
+})(current, gForm, gSNC);
+
+    //Type appropriate comment here, and begin script below
+
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>Manjusha.Jadhav</sys_created_by>
+        <sys_created_on>2025-03-17 08:05:15</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ad9018965314221027b678e0a0490efd</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>Show/Hide Equipment Fields</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="HR Onboarding &amp;amp; Offboarding" source="x_1583423_hr_hroo">5f29c3f75323121027b678e0a0490ef4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HR Onboarding &amp;amp; Offboarding">5f29c3f75323121027b678e0a0490ef4</sys_scope>
+        <sys_update_name>sys_script_client_ad9018965314221027b678e0a0490efd</sys_update_name>
+        <sys_updated_by>Manjusha.Jadhav</sys_updated_by>
+        <sys_updated_on>2025-03-17 09:20:16</sys_updated_on>
+        <table>x_1583423_hr_hroo_employee_onboarding</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

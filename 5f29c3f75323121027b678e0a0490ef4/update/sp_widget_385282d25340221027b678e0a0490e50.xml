@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function($scope, spModal) {
+    $scope.openRequest = function(sys_id) {
+        window.location.href = '?id=form&table=x_your_scope_onboarding_request&sys_id=' + sys_id;
+    };
+}
+]]></client_script>
+        <controller_as>c</controller_as>
+        <css>/* Styling for the request table */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    text-align: left;
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+.table th {
+    background-color: #0077cc;
+    color: white;
+    font-weight: bold;
+}
+
+.table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.table tr:hover {
+    background-color: #ddd;
+}
+
+/* Button styling */
+.btn {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #0077cc;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #005fa3;
+}
+</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>hr_full_request_management</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>HR Full Request Management</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+    var result = [];
+    var tables = ['x_1583423_hr_hroo_employee_onboarding', 'x_1583423_hr_hroo_employee_offboarding']; // Replace with actual table names
+
+    tables.forEach(function(table) {
+        var gr = new GlideRecord(table);
+        gr.orderByDesc('sys_created_on');
+        gr.query();
+        while (gr.next()) {
+            result.push({
+                sys_id: gr.getValue('sys_id'),
+                number: gr.getValue('number'),
+                type: table.includes('onboarding') ? 'Onboarding' : 'Offboarding',
+                status: gr.getDisplayValue('state'),
+                employee: gr.getDisplayValue('employee_name'),
+                created_on: gr.getDisplayValue('sys_created_on')
+            });
+        }
+    });
+
+    data.requests = result;
+})();
+]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>Manjusha.Jadhav</sys_created_by>
+        <sys_created_on>2025-03-05 06:05:43</sys_created_on>
+        <sys_id>385282d25340221027b678e0a0490e50</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>HR Full Request Management</sys_name>
+        <sys_package display_value="HR Onboarding &amp;amp; Offboarding" source="x_1583423_hr_hroo">5f29c3f75323121027b678e0a0490ef4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HR Onboarding &amp;amp; Offboarding">5f29c3f75323121027b678e0a0490ef4</sys_scope>
+        <sys_update_name>sp_widget_385282d25340221027b678e0a0490e50</sys_update_name>
+        <sys_updated_by>Manjusha.Jadhav</sys_updated_by>
+        <sys_updated_on>2025-03-05 06:17:22</sys_updated_on>
+        <template><![CDATA[<div class="table-responsive">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Request Number</th>
+                <th>Employee</th>
+                <th>Type</th>
+                <th>Status</th>
+                <th>Created On</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="req in data.requests">
+                <td>{{ req.number }}</td>
+                <td>{{ req.employee }}</td>
+                <td>{{ req.type }}</td>
+                <td>{{ req.status }}</td>
+                <td>{{ req.created_on }}</td>
+                <td>
+                    <button class="btn btn-primary" ng-click="openRequest(req.sys_id)">View</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+]]></template>
+    </sp_widget>
+</record_update>
